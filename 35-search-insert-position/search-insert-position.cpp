@@ -1,8 +1,8 @@
 class Solution {
 public:
-//khanuzair-f15
+    // khanuzair-f15
     int searchInsert(vector<int>& nums, int target) {
- 
+
         int low = 0;
         int mid;
         int index;
