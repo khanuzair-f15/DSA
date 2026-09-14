@@ -5,13 +5,11 @@ public:
         long long num1 = 0;
         long long num2 = 0;
 
-        for (int i = 1; i <= n; i++) {
-            if (i % m != 0) {
-                num1 += i;
-            } else {
-                num2 += i;
-            }
-        }
-        return num1-num2;
+        long long k = n / m;
+
+        num2 = 1LL * m * k * (k + 1) / 2;
+        num1 = 1LL * n * (n + 1) / 2 - num2;
+        
+        return num1 - num2;
     }
 };
