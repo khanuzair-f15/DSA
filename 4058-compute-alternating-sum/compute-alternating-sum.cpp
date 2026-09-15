@@ -9,9 +9,9 @@ public:
             if (i % 2 == 0) {
                 sum1 += nums[i];
             } else {
-                sum2 += nums[i];
+                sum1 -= nums[i];
             }
         }
-        return sum1-sum2;
+        return sum1;
     }
 };
