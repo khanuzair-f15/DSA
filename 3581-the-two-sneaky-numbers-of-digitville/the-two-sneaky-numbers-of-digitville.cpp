@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> getSneakyNumbers(vector<int>& nums) {
-        set<int> s;
+        unordered_set<int> s;
         vector<int> v;
         for (auto i : nums) {
             if (s.count(i)) {
