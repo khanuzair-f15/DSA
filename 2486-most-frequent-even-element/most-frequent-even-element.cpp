@@ -1,17 +1,15 @@
 class Solution {
 public:
     int mostFrequentEven(vector<int>& nums) {
-
+        ios::sync_with_stdio(false);
+        cin.tie(nullptr);
         map<int, int> m;
-
         vector<int> v;
-
         for (auto i : nums) {
             if (i % 2 == 0) {
                 m[i]++;
             }
         }
-
         int maxFreq = 0;
         int mostFrequent;
 
