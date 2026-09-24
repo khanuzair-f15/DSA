@@ -9,7 +9,7 @@ public:
                 sum =sum+ i;
             }
         }
-
+        
         cout<<sum;
         if (sum == n) {
             return true;
