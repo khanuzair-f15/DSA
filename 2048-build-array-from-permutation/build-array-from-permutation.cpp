@@ -6,8 +6,9 @@ public:
         for (int i = 0; i < nums.size(); i++) {
             v[i] = nums[nums[i]];
         }
+        nums.clear();
         return v;
 
-        return v;
+       
     }
 };
