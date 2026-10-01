@@ -96,6 +96,9 @@ CHART_FILES = {
     "time": ("time-complexity-radar.svg", "time-complexity-radar.png"),
     "space": ("space-complexity-radar.svg", "space-complexity-radar.png"),
 }
+# Live LeetCode profile card (owned by scripts/generate_leetcode_card.py).
+# write_charts() must never delete these.
+LEETCODE_CARD_FILES = ("leetcode-profile.svg", "leetcode-profile.png")
 CHART_TITLES = {
     "difficulty": "Difficulty",
     "languages": "Languages",
@@ -1184,7 +1187,7 @@ def write_charts(assets_dir: Path, stats: dict) -> dict[str, dict[str, bool]]:
         "space": (stats["space_complexity_counts"], SPACE_AXES, True),
     }
     avail: dict[str, dict[str, bool]] = {}
-    expected: set[str] = set()
+    expected: set[str] = set(LEETCODE_CARD_FILES)
     for key, (svg_name, png_name) in CHART_FILES.items():
         counts, order, keep_zeros = specs[key]
         title = f"{CHART_TITLES[key]} distribution"
@@ -1339,7 +1342,9 @@ DIFF_BADGE = {"Easy": "🟢 Easy", "Medium": "🟠 Medium", "Hard": "🔴 Hard",
 
 
 def render_dashboard(records: list[dict], today: str,
-                     avail: dict[str, dict[str, bool]]) -> tuple[str, dict]:
+                     avail: dict[str, dict[str, bool]],
+                     leet_embed: str = "",
+                     leet_caption: str = "") -> tuple[str, dict]:
     total = len(records)
     diff_c = Counter(r["difficulty"] for r in records)
     lang_c = Counter(r["language"] for r in records)
@@ -1358,15 +1363,36 @@ def render_dashboard(records: list[dict], today: str,
 
     L: list[str] = []
     A = L.append
-    # Hero: dynamic numbers only, no hardcoded counts.
+    # Hero: dynamic numbers only, no hardcoded counts. This section describes
+    # the GitHub repository only; live LeetCode data has its own card below.
     A('<div align="center">')
     A("")
     A("## LeetCode Journey")
     A("")
-    A(f"**{total} problems solved** — difficulty, languages and complexity, "
-      "tracked automatically.")
+    A(f"**{total} solutions tracked in this repository** — difficulty, "
+      "languages and complexity, tracked automatically.")
     A("")
     A("</div>")
+    A("")
+    # Live LeetCode profile card (single self-contained SVG owned by
+    # scripts/generate_leetcode_card.py). Detailed numbers live in the card;
+    # they are intentionally not duplicated in a second table here.
+    A("## 🧑‍💻 LeetCode — Live Profile")
+    A("")
+    if leet_embed:
+        A(leet_embed)
+        A("")
+    else:
+        A("_Live LeetCode card pending — run "
+          "`python scripts/generate_leetcode_card.py` to generate it._")
+        A("")
+    if leet_caption:
+        A(leet_caption)
+        A("")
+    A("## 📊 Repository Stats")
+    A("")
+    A("_GitHub repository data — independent of the live profile above. A "
+      "solution missing here is not necessarily unsolved on LeetCode._")
     A("")
     # Stat cards (plain HTML table: theme-friendly, no JS, mobile-safe).
     A("<table>")
@@ -1388,7 +1414,7 @@ def render_dashboard(records: list[dict], today: str,
     A("")
     A("## 🎯 Progress")
     A("")
-    A(f"**{total}** problems solved")
+    A(f"**{total}** solutions in this repository")
     A("")
     A(f"🟢 Easy — **{diff_c.get('Easy', 0)}**<br>")
     A(f"🟠 Medium — **{diff_c.get('Medium', 0)}**<br>")
@@ -1555,7 +1581,54 @@ def main() -> int:
     else:
         warn("charts skipped (--no-charts); showing tables only")
 
-    dashboard, stats = render_dashboard(records, today, avail)
+    # Live LeetCode card embed (owned by generate_leetcode_card.py, which runs
+    # before this script in the workflow). Never hardcoded numbers here; the
+    # card itself carries the live statistics.
+    leet_svg = assets_dir / LEETCODE_CARD_FILES[0]
+    leet_png = assets_dir / LEETCODE_CARD_FILES[1]
+    has_svg, has_png = leet_svg.is_file(), leet_png.is_file()
+    if has_svg and has_png:
+        leet_embed = (
+            "<picture>\n"
+            f'  <source srcset="assets/stats/{LEETCODE_CARD_FILES[0]}" '
+            'type="image/svg+xml">\n'
+            f'  <img src="assets/stats/{LEETCODE_CARD_FILES[1]}" '
+            'alt="LeetCode Profile" width="960">\n'
+            "</picture>"
+        )
+    elif has_svg:
+        leet_embed = (f"![LeetCode Profile]"
+                      f"(assets/stats/{LEETCODE_CARD_FILES[0]})")
+    elif has_png:
+        leet_embed = (f"![LeetCode Profile]"
+                      f"(assets/stats/{LEETCODE_CARD_FILES[1]})")
+    else:
+        leet_embed = ""
+        warn("live LeetCode card not found; run "
+             "scripts/generate_leetcode_card.py first")
+    leet_caption = ""
+    try:
+        import json as _json
+        cache = _json.loads(
+            (root / "data" / "leetcode_cache.json").read_text(
+                encoding="utf-8"))
+        _user = esc_xml(str(cache.get("username", "leetcode.com")))
+        _when = str(cache.get("fetched_at", ""))[:10]
+        if _when:
+            leet_caption = (
+                f"_Live LeetCode data for **{_user}**, synced {_when} — "
+                "independent of the repository count below._")
+        else:
+            leet_caption = (
+                f"_Live LeetCode data for **{_user}** — independent of the "
+                "repository count below._")
+    except (OSError, ValueError):
+        if has_svg or has_png:
+            leet_caption = ("_Live LeetCode data — independent of the "
+                            "repository count below._")
+
+    dashboard, stats = render_dashboard(records, today, avail,
+                                        leet_embed, leet_caption)
 
     changed = update_readme(readme_path, dashboard)
 

@@ -1,0 +1,53 @@
+name: Stats
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**.cpp"
+      - "**.py"
+      - "**.java"
+      - "**.c"
+      - "**.js"
+      - "**.ts"
+      - "scripts/**"
+      - "data/**"
+      - ".github/workflows/stats.yml"
+  schedule:
+    # Daily refresh of the live LeetCode card (ranking / heatmap drift).
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PNG renderer
+        run: pip install Pillow
+
+      - name: Live LeetCode profile card
+        env:
+          LEETCODE_USERNAME: uzair_khan_work
+        run: |
+          python scripts/generate_leetcode_card.py \
+            --username "${LEETCODE_USERNAME:-uzair_khan_work}"
+
+      - name: Repository dashboard
+        run: python scripts/generate_stats.py
+
+      - name: Commit refreshed stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/stats
+          git add data/leetcode_cache.json 2>/dev/null || true
+          git diff --quiet --cached || git commit -m "chore: refresh stats"
+          git push
