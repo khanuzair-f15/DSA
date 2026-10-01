@@ -1,0 +1,453 @@
+{
+  "add-digits": {
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Number Theory",
+      "Simulation"
+    ]
+  },
+  "add-two-integers": {
+    "difficulty": "Easy",
+    "tags": [
+      "Math"
+    ]
+  },
+  "binary-search": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Binary Search"
+    ]
+  },
+  "build-array-from-permutation": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Simulation"
+    ]
+  },
+  "check-if-the-sentence-is-pangram": {
+    "difficulty": "Easy",
+    "tags": [
+      "Hash Table",
+      "String"
+    ]
+  },
+  "climbing-stairs": {
+    "difficulty": "Easy",
+    "tags": [
+      "Dynamic Programming",
+      "Math",
+      "Memoization"
+    ]
+  },
+  "compute-alternating-sum": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Simulation"
+    ]
+  },
+  "contains-duplicate": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sorting"
+    ]
+  },
+  "count-the-digits-that-divide-a-number": {
+    "difficulty": "Easy",
+    "tags": [
+      "Math"
+    ]
+  },
+  "detect-capital": {
+    "difficulty": "Easy",
+    "tags": [
+      "String"
+    ]
+  },
+  "determine-whether-matrix-can-be-obtained-by-rotation": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Matrix"
+    ]
+  },
+  "divisible-and-non-divisible-sums-difference": {
+    "difficulty": "Easy",
+    "tags": [
+      "Math"
+    ]
+  },
+  "find-all-duplicates-in-an-array": {
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sorting"
+    ]
+  },
+  "find-closest-person": {
+    "difficulty": "Easy",
+    "tags": [
+      "Math"
+    ]
+  },
+  "find-minimum-operations-to-make-all-elements-divisible-by-three": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Math"
+    ]
+  },
+  "find-the-difference": {
+    "difficulty": "Easy",
+    "tags": [
+      "Bit Manipulation",
+      "Hash Table",
+      "Sorting",
+      "String"
+    ]
+  },
+  "find-the-duplicate-number": {
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Bit Manipulation",
+      "Floyd's Cycle Finding Algorithm",
+      "Pigeonhole Principle",
+      "Two Pointers"
+    ]
+  },
+  "first-bad-version": {
+    "difficulty": "Easy",
+    "tags": [
+      "Binary Search",
+      "Interactive"
+    ]
+  },
+  "fizz-buzz": {
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Simulation",
+      "String"
+    ]
+  },
+  "guess-number-higher-or-lower": {
+    "difficulty": "Easy",
+    "tags": [
+      "Binary Search",
+      "Interactive"
+    ]
+  },
+  "harshad-number": {
+    "difficulty": "Easy",
+    "tags": [
+      "Math"
+    ]
+  },
+  "intersection-of-two-arrays": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Hash Table",
+      "Sorting",
+      "Two Pointers"
+    ]
+  },
+  "jewels-and-stones": {
+    "difficulty": "Easy",
+    "tags": [
+      "Hash Table",
+      "String"
+    ]
+  },
+  "longest-common-prefix": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "String",
+      "Trie"
+    ]
+  },
+  "maximum-count-of-positive-integer-and-negative-integer": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Counting"
+    ]
+  },
+  "maximum-substrings-with-distinct-start": {
+    "difficulty": "Medium",
+    "tags": [
+      "Hash Table",
+      "String"
+    ]
+  },
+  "merge-strings-alternately": {
+    "difficulty": "Easy",
+    "tags": [
+      "String",
+      "Two Pointers"
+    ]
+  },
+  "minimum-common-value": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Hash Table",
+      "Two Pointers"
+    ]
+  },
+  "minimum-operations-to-make-array-sum-divisible-by-k": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Math"
+    ]
+  },
+  "mirror-distance-of-an-integer": {
+    "difficulty": "Easy",
+    "tags": [
+      "Math"
+    ]
+  },
+  "missing-number": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Binary Search",
+      "Bit Manipulation",
+      "Hash Table",
+      "Math",
+      "Sorting"
+    ]
+  },
+  "most-frequent-even-element": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Counting",
+      "Hash Table"
+    ]
+  },
+  "partition-array-according-to-given-pivot": {
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Simulation",
+      "Two Pointers"
+    ]
+  },
+  "perfect-number": {
+    "difficulty": "Easy",
+    "tags": [
+      "Math"
+    ]
+  },
+  "power-of-three": {
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Recursion"
+    ]
+  },
+  "ransom-note": {
+    "difficulty": "Easy",
+    "tags": [
+      "Counting",
+      "Hash Table",
+      "String"
+    ]
+  },
+  "remove-duplicates-from-sorted-array": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ]
+  },
+  "restore-finishing-order": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table"
+    ]
+  },
+  "reverse-integer": {
+    "difficulty": "Medium",
+    "tags": [
+      "Math"
+    ]
+  },
+  "reverse-words-in-a-string-iii": {
+    "difficulty": "Easy",
+    "tags": [
+      "String",
+      "Two Pointers"
+    ]
+  },
+  "rotate-image": {
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Math",
+      "Matrix"
+    ]
+  },
+  "score-of-a-string": {
+    "difficulty": "Easy",
+    "tags": [
+      "String"
+    ]
+  },
+  "search-insert-position": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Binary Search"
+    ]
+  },
+  "set-matrix-zeroes": {
+    "difficulty": "Medium",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Matrix"
+    ]
+  },
+  "sign-of-the-product-of-an-array": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Math"
+    ]
+  },
+  "single-number": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Bit Manipulation"
+    ]
+  },
+  "smallest-even-multiple": {
+    "difficulty": "Easy",
+    "tags": [
+      "Math",
+      "Number Theory"
+    ]
+  },
+  "smallest-index-with-digit-sum-equal-to-index": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Math"
+    ]
+  },
+  "sort-the-people": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sorting",
+      "String"
+    ]
+  },
+  "sqrtx": {
+    "difficulty": "Easy",
+    "tags": [
+      "Binary Search",
+      "Math",
+      "Newton's Method"
+    ]
+  },
+  "subtract-the-product-and-sum-of-digits-of-an-integer": {
+    "difficulty": "Easy",
+    "tags": [
+      "Math"
+    ]
+  },
+  "sum-multiples": {
+    "difficulty": "Easy",
+    "tags": [
+      "Math"
+    ]
+  },
+  "the-kth-factor-of-n": {
+    "difficulty": "Medium",
+    "tags": [
+      "Math",
+      "Number Theory",
+      "Prime Factorization"
+    ]
+  },
+  "the-two-sneaky-numbers-of-digitville": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Math"
+    ]
+  },
+  "three-divisors": {
+    "difficulty": "Easy",
+    "tags": [
+      "Enumeration",
+      "Math",
+      "Number Theory",
+      "Prime Factorization",
+      "Sieve Theory"
+    ]
+  },
+  "to-lower-case": {
+    "difficulty": "Easy",
+    "tags": [
+      "String"
+    ]
+  },
+  "truncate-sentence": {
+    "difficulty": "Easy",
+    "tags": [
+      "Array",
+      "String"
+    ]
+  },
+  "valid-anagram": {
+    "difficulty": "Easy",
+    "tags": [
+      "Hash Table",
+      "Sorting",
+      "String"
+    ]
+  },
+  "valid-palindrome": {
+    "difficulty": "Easy",
+    "tags": [
+      "String",
+      "Two Pointers"
+    ]
+  },
+  "valid-parentheses": {
+    "difficulty": "Easy",
+    "tags": [
+      "Bracket Sequences",
+      "Stack",
+      "String"
+    ]
+  },
+  "valid-perfect-square": {
+    "difficulty": "Easy",
+    "tags": [
+      "Binary Search",
+      "Math"
+    ]
+  }
+}

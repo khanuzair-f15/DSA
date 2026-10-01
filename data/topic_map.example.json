@@ -1,0 +1,5 @@
+{
+  "20-valid-parentheses": ["Stack", "String"],
+  "48-rotate-image": ["Array", "Matrix"],
+  "217-contains-duplicate": ["Array", "Hash Table"]
+}

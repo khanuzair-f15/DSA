@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="430" viewBox="0 0 560 430" role="img">
+<title>Space complexity distribution</title>
+<defs><style>.t{fill:#57606a;font-family:sans-serif}.g{stroke:#8b949e;stroke-opacity:.35;fill:none}@media (prefers-color-scheme: dark){.t{fill:#c9d1d9}.g{stroke:#8b949e}</style></defs>
+<text class="t" x="280.0" y="28" text-anchor="middle" font-size="16" font-weight="bold">Space complexity distribution</text>
+<polygon class="g" stroke-width="1" points="280.0,186.0 317.0,223.0 280.0,260.0 243.0,223.0"/>
+<polygon class="g" stroke-width="1" points="280.0,149.0 354.0,223.0 280.0,297.0 206.0,223.0"/>
+<polygon class="g" stroke-width="1" points="280.0,112.0 391.0,223.0 280.0,334.0 169.0,223.0"/>
+<polygon class="g" stroke-width="1" points="280.0,75.0 428.0,223.0 280.0,371.0 132.0,223.0"/>
+<line class="g" x1="280.0" y1="223.0" x2="280.0" y2="75.0"/>
+<line class="g" x1="280.0" y1="223.0" x2="428.0" y2="223.0"/>
+<line class="g" x1="280.0" y1="223.0" x2="280.0" y2="371.0"/>
+<line class="g" x1="280.0" y1="223.0" x2="132.0" y2="223.0"/>
+<polygon points="280.0,75.0 359.7,223.0 280.0,223.0 276.2,223.0" fill="#cf222e" fill-opacity="0.25" stroke="#cf222e" stroke-width="2"/>
+<circle cx="280.0" cy="75.0" r="4" fill="#cf222e"/>
+<circle cx="359.7" cy="223.0" r="4" fill="#cf222e"/>
+<circle cx="280.0" cy="223.0" r="4" fill="#cf222e"/>
+<circle cx="276.2" cy="223.0" r="4" fill="#cf222e"/>
+<text class="t" x="280.0" y="45.0" text-anchor="middle" font-size="12">O(1) · 39</text>
+<text class="t" x="458.0" y="223.0" text-anchor="start" font-size="12">O(n) · 21</text>
+<text class="t" x="280.0" y="401.0" text-anchor="middle" font-size="12">O(n^2) · 0</text>
+<text class="t" x="102.0" y="223.0" text-anchor="end" font-size="12">Unknown · 1</text>
+</svg>
