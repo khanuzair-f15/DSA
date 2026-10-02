@@ -7,11 +7,8 @@ public:
         }
         set<int> seen;
         for (auto p : mp) {
-            if (seen.count(p.second)) {
-                return false;
-            }
             seen.insert(p.second);
         }
-        return true;
+        return seen.size() == mp.size();
     }
 };
