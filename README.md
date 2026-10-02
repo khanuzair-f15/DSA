@@ -143,7 +143,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 2015 | [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation) | 🟢 Easy | C++ | O(n^2) | O(1) |
 | 2048 | [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation) | 🟢 Easy | C++ | O(n) | O(n) |
 | 2083 | [Three Divisors](https://leetcode.com/problems/three-divisors) | 🟢 Easy | C++ | O(n) | O(1) |
-| 2132 | [Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array) | 🟢 Easy | C++ | O(n^2) | O(n^2) |
+| 2132 | [Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array) | 🟢 Easy | C++ | O(n) | O(n^2) |
 | 2265 | [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot) | 🟠 Medium | C++ | O(n) | O(n) |
 | 2383 | [Add Two Integers](https://leetcode.com/problems/add-two-integers) | 🟢 Easy | C++ | O(1) | O(1) |
 | 2486 | [Most Frequent Even Element](https://leetcode.com/problems/most-frequent-even-element) | 🟢 Easy | C++ | O(n log n) | O(n) |
