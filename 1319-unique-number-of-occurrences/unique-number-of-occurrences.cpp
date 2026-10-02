@@ -5,7 +5,7 @@ public:
         for (auto a : arr) {
             mp[a]++;
         }
-        set<int> seen;
+        unordered_set<int> seen;
         for (auto p : mp) {
             seen.insert(p.second);
         }
