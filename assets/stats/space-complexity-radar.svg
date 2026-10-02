@@ -2,21 +2,30 @@
 <title>Space complexity distribution</title>
 <defs><style>.t{fill:#57606a;font-family:sans-serif}.g{stroke:#8b949e;stroke-opacity:.35;fill:none}@media (prefers-color-scheme: dark){.t{fill:#c9d1d9}.g{stroke:#8b949e}</style></defs>
 <text class="t" x="280.0" y="28" text-anchor="middle" font-size="16" font-weight="bold">Space complexity distribution</text>
-<polygon class="g" stroke-width="1" points="280.0,186.0 317.0,223.0 280.0,260.0 243.0,223.0"/>
-<polygon class="g" stroke-width="1" points="280.0,149.0 354.0,223.0 280.0,297.0 206.0,223.0"/>
-<polygon class="g" stroke-width="1" points="280.0,112.0 391.0,223.0 280.0,334.0 169.0,223.0"/>
-<polygon class="g" stroke-width="1" points="280.0,75.0 428.0,223.0 280.0,371.0 132.0,223.0"/>
+<polygon class="g" stroke-width="1" points="280.0,186.0 308.9,199.9 316.1,231.2 296.1,256.3 263.9,256.3 243.9,231.2 251.1,199.9"/>
+<polygon class="g" stroke-width="1" points="280.0,149.0 337.9,176.9 352.1,239.5 312.1,289.7 247.9,289.7 207.9,239.5 222.1,176.9"/>
+<polygon class="g" stroke-width="1" points="280.0,112.0 366.8,153.8 388.2,247.7 328.2,323.0 231.8,323.0 171.8,247.7 193.2,153.8"/>
+<polygon class="g" stroke-width="1" points="280.0,75.0 395.7,130.7 424.3,255.9 344.2,356.3 215.8,356.3 135.7,255.9 164.3,130.7"/>
 <line class="g" x1="280.0" y1="223.0" x2="280.0" y2="75.0"/>
-<line class="g" x1="280.0" y1="223.0" x2="428.0" y2="223.0"/>
-<line class="g" x1="280.0" y1="223.0" x2="280.0" y2="371.0"/>
-<line class="g" x1="280.0" y1="223.0" x2="132.0" y2="223.0"/>
-<polygon points="280.0,75.0 359.7,223.0 280.0,226.8 276.2,223.0" fill="#cf222e" fill-opacity="0.25" stroke="#cf222e" stroke-width="2"/>
+<line class="g" x1="280.0" y1="223.0" x2="395.7" y2="130.7"/>
+<line class="g" x1="280.0" y1="223.0" x2="424.3" y2="255.9"/>
+<line class="g" x1="280.0" y1="223.0" x2="344.2" y2="356.3"/>
+<line class="g" x1="280.0" y1="223.0" x2="215.8" y2="356.3"/>
+<line class="g" x1="280.0" y1="223.0" x2="135.7" y2="255.9"/>
+<line class="g" x1="280.0" y1="223.0" x2="164.3" y2="130.7"/>
+<polygon points="280.0,75.0 280.0,223.0 356.2,240.4 290.7,245.2 278.2,226.7 280.0,223.0 280.0,223.0" fill="#cf222e" fill-opacity="0.25" stroke="#cf222e" stroke-width="2"/>
 <circle cx="280.0" cy="75.0" r="4" fill="#cf222e"/>
-<circle cx="359.7" cy="223.0" r="4" fill="#cf222e"/>
-<circle cx="280.0" cy="226.8" r="4" fill="#cf222e"/>
-<circle cx="276.2" cy="223.0" r="4" fill="#cf222e"/>
-<text class="t" x="280.0" y="45.0" text-anchor="middle" font-size="12">O(1) · 39</text>
-<text class="t" x="458.0" y="223.0" text-anchor="start" font-size="12">O(n) · 21</text>
-<text class="t" x="280.0" y="401.0" text-anchor="middle" font-size="12">O(n^2) · 1</text>
-<text class="t" x="102.0" y="223.0" text-anchor="end" font-size="12">Unknown · 1</text>
+<circle cx="280.0" cy="223.0" r="4" fill="#cf222e"/>
+<circle cx="356.2" cy="240.4" r="4" fill="#cf222e"/>
+<circle cx="290.7" cy="245.2" r="4" fill="#cf222e"/>
+<circle cx="278.2" cy="226.7" r="4" fill="#cf222e"/>
+<circle cx="280.0" cy="223.0" r="4" fill="#cf222e"/>
+<circle cx="280.0" cy="223.0" r="4" fill="#cf222e"/>
+<text class="t" x="280.0" y="45.0" text-anchor="middle" font-size="12">O(1) · 36</text>
+<text class="t" x="419.2" y="112.0" text-anchor="start" font-size="12">O(log n) · 0</text>
+<text class="t" x="453.5" y="262.6" text-anchor="start" font-size="12">O(n) · 19</text>
+<text class="t" x="357.2" y="383.4" text-anchor="start" font-size="12">O(m + n) · 6</text>
+<text class="t" x="202.8" y="383.4" text-anchor="end" font-size="12">O(mn) · 1</text>
+<text class="t" x="106.5" y="262.6" text-anchor="end" font-size="12">O(n^2) · 0</text>
+<text class="t" x="140.8" y="112.0" text-anchor="end" font-size="12">Unknown · 0</text>
 </svg>

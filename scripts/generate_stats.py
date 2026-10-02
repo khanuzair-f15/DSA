@@ -18,7 +18,9 @@ Metadata priority (no internet lookups):
   2. data/problem_meta.json cache (generated earlier, read-only fallback)
   3. folder-slug fallback (Title Case title, Unknown URL/difficulty)
 
-Complexity: heuristic static analysis of the selected source file.
+Complexity: structural static analysis of the selected source code
+  (see scripts/complexity.py: statement IR for C++, stdlib ast for
+  Python, operation knowledge base, worst-case composition).
 Unknown is preferred over a wrong guess (Low confidence -> Unknown).
 
 Usage:
@@ -80,8 +82,10 @@ TEST_NAME_RES = [
 SOLUTION_BASENAMES = ["solution", "answer", "main"]
 
 VALID_DIFFICULTIES = ("Easy", "Medium", "Hard")
-TIME_ORDER = ["O(1)", "O(log n)", "O(n)", "O(n log n)", "O(n^2)", "O(n^3)", "Unknown"]
-SPACE_ORDER = ["O(1)", "O(n)", "O(n^2)", "Unknown"]
+TIME_ORDER = ["O(1)", "O(log n)", "O(n)", "O(n log n)", "O(m + n)", "O(mn)",
+              "O(n^2)", "O(n^2 log n)", "O(n^3)", "O(2^n)", "Unknown"]
+SPACE_ORDER = ["O(1)", "O(log n)", "O(n)", "O(m + n)", "O(mn)", "O(n^2)",
+               "Unknown"]
 
 AUTO_START = "<!-- AUTO_STATS_START -->"
 AUTO_END = "<!-- AUTO_STATS_END -->"
@@ -107,9 +111,10 @@ CHART_TITLES = {
 }
 # Fixed axis order for radar charts (Unknown kept as an honest axis).
 DIFF_AXES = ["Easy", "Medium", "Hard", "Unknown"]
-TIME_AXES = ["O(1)", "O(log n)", "O(n)", "O(n log n)", "O(n^2)",
-             "O(n^2 log n)", "O(n^3)", "Unknown"]
-SPACE_AXES = ["O(1)", "O(n)", "O(n^2)", "Unknown"]
+TIME_AXES = ["O(1)", "O(log n)", "O(n)", "O(n log n)", "O(m + n)", "O(mn)",
+             "O(n^2)", "O(n^2 log n)", "O(n^3)", "O(2^n)", "Unknown"]
+SPACE_AXES = ["O(1)", "O(log n)", "O(n)", "O(m + n)", "O(mn)", "O(n^2)",
+              "Unknown"]
 
 warnings_log: list[str] = []
 
@@ -304,484 +309,18 @@ def select_source(problem_dir: Path, title_slug: str, folder_slug: str) -> tuple
 
 
 # --------------------------------------------------------------------------
-# Complexity analyzer (heuristic, conservative)
+# Complexity analysis (structural engine; see scripts/complexity.py)
 # --------------------------------------------------------------------------
 
-BLOCK_COMMENT_RE = re.compile(r"/\*.*?\*/", re.DOTALL)
-LINE_COMMENT_RE = re.compile(r"//[^\n]*")
-PY_COMMENT_RE = re.compile(r"#[^\n]*")
-STRING_RE = re.compile(
-    r'"""(?:\\.|.)*?"""|\'\'\'(?:\\.|.)*?\'\'\'|"(?:\\.|[^"\\\n])*"|\'(?:\\.|[^\'\\\n])*\'|`(?:\\.|[^`\\])*`',
-    re.DOTALL,
-)
-
-LOOP_KW_RE = re.compile(r"\b(for|while|do)\b")
-SORT_RES = [
-    re.compile(r"\bsort\s*\("),
-    re.compile(r"\bstable_sort\s*\("),
-    re.compile(r"\bstd::sort\s*\("),
-    re.compile(r"\.sort\s*\("),
-    re.compile(r"\bsorted\s*\("),
-    re.compile(r"\bnth_element\s*\("),
-]
-LOGBOUND_RES = [
-    re.compile(r"\blower_bound\s*\("),
-    re.compile(r"\bupper_bound\s*\("),
-    re.compile(r"\bbinary_search\s*\("),
-    re.compile(r"\bbisect\s*(\.|_)"),
-]
-HALVING_RES = [
-    re.compile(r"\bmid\b"),
-    re.compile(r">>\s*1"),
-    re.compile(r"/\s*2"),
-    re.compile(r"//\s*2"),
-]
-NARROW_RES = [
-    re.compile(r"\b(low|high|left|right|lo|hi)\b"),
-]
-RECURSION_DEF_RES = [
-    re.compile(r"\bdef\s+([A-Za-z_]\w*)\s*\("),  # python
-    re.compile(r"\b([A-Za-z_]\w*)\s*\([^;{}()]*\)\s*(?:const\s*)?\{"),  # brace langs
-]
-ALLOC_2D_RES = [
-    # bare `vector<vector<...>` type mentions (e.g. `& matrix` parameters are
-    # input storage) must not count: require an allocation token `(`, `=`,
-    # `{` before the declaration ends.
-    re.compile(r"vector\s*<\s*vector\b[^;{}()]*[\(=\{]"),
-    re.compile(r"new\s+[A-Za-z_:\w]+\s*(\[[^\]]+\]\s*){2,}"),
-    re.compile(r"\[\s*\[.*?for\s+\w+\s+in\b", re.DOTALL),
-]
-ALLOC_N_RES = [
-    re.compile(r"\bvector\s*<[^;{}]*\(\s*[^;{}]*\b(n\b|len\b|size\s*\(\s*\)|\.size|length\b)"),
-    re.compile(r"new\s+[A-Za-z_:\w]+\s*\[[^\]]*\b(n\b|len|size|length)\b[^\]]*\]"),
-    re.compile(r"\[\s*0\s*\]\s*\*\s*n\b"),
-    re.compile(r"\[.+for\s+\w+\s+in\b", re.DOTALL),
-    re.compile(r"\b(Counter|defaultdict|OrderedDict)\s*\("),
-]
-GROW_CALL_RE = re.compile(
-    r"\.(push_back|push|emplace|emplace_back|append|add|insert|put)\s*\("
-)
-NLIKE_RE = re.compile(r"\b(n\b|len\b|size\s*\(\s*\)|\.size\b|length\b|nums\b|s\b|arr\b)")
-CONST_BOUND_RES = [
-    re.compile(r"range\s*\(\s*\d{1,4}\s*\)"),
-    re.compile(r";\s*[A-Za-z_]\w*\s*<\s*\d{1,4}\s*;"),
-    re.compile(r"<\s*\d{1,4}\s*\)"),
-]
+try:
+    from complexity import analyze_file
+except ImportError:  # pragma: no cover - scripts/ always on sys.path
+    import sys as _sys
+    from pathlib import Path as _Path
+    _sys.path.insert(0, str(_Path(__file__).resolve().parent))
+    from complexity import analyze_file
 
 
-def strip_code(text: str, lang: str) -> str:
-    """Remove comments and string contents (keeps structure) for analysis."""
-    t = BLOCK_COMMENT_RE.sub(" ", text)
-    if lang == "Python":
-        t = PY_COMMENT_RE.sub(" ", t)
-    else:
-        t = LINE_COMMENT_RE.sub(" ", t)
-    return STRING_RE.sub('""', t)
-
-
-def match_paren(s: str, open_idx: int) -> int:
-    """Index of matching ')' for '(' at open_idx, or -1."""
-    depth = 0
-    for i in range(open_idx, len(s)):
-        if s[i] == "(":
-            depth += 1
-        elif s[i] == ")":
-            depth -= 1
-            if depth == 0:
-                return i
-    return -1
-
-
-def match_brace(s: str, open_idx: int) -> int:
-    depth = 0
-    for i in range(open_idx, len(s)):
-        if s[i] == "{":
-            depth += 1
-        elif s[i] == "}":
-            depth -= 1
-            if depth == 0:
-                return i
-    return -1
-
-
-def header_is_const(header: str) -> bool:
-    h = header
-    if NLIKE_RE.search(h):
-        return False
-    return any(r.search(h) for r in CONST_BOUND_RES)
-
-
-def brace_loop_spans(code: str) -> tuple[list, dict]:
-    """Collect loop body spans; info holds max scaling depth + flags."""
-    spans: list[tuple[int, int, bool]] = []  # (start, end, const)
-    headers: list[dict] = []
-    block_stack: list[bool] = []  # True = loop block
-    pending: dict | None = None
-    chained: list[dict] = []  # braceless outer loops awaiting an inner body
-
-    def record(s: int, e: int, c: bool) -> None:
-        spans.append((s, e, c))
-        # braceless chains (`for (..) for (..) x++;`): outers end where the
-        # innermost body ends.
-        for o in chained:
-            spans.append((o["hstart"], e, o["const"] and c))
-        chained.clear()
-
-    def body_starts_with_loop(k: int) -> bool:
-        m2 = LOOP_KW_RE.match(code, k)
-        return bool(m2 and not (code[k - 1].isalnum() or code[k - 1] == "_")) \
-            if k > 0 else bool(m2)
-    i, n = 0, len(code)
-    while i < n:
-        m = LOOP_KW_RE.match(code, i)
-        if m and (i == 0 or not (code[i - 1].isalnum() or code[i - 1] == "_")):
-            kw = m.group(1)
-            j = m.end()
-            while j < n and code[j].isspace():
-                j += 1
-            if kw == "do":
-                while j < n and code[j].isspace():
-                    j += 1
-                if j < n and code[j] == "{":
-                    pending = {"const": False, "hstart": m.start()}
-                    headers.append({"kw": kw, "const": False, "header": "do"})
-                    i = j
-                    continue
-                semi = code.find(";", j)
-                bend = semi if semi != -1 else min(n - 1, j + 200)
-                record(m.start(), bend, False)
-                headers.append({"kw": kw, "const": False, "header": "do"})
-                i = bend + 1
-                continue
-            # for / while: expect '(' header
-            if j < n and code[j] == "(":
-                hend = match_paren(code, j)
-                if hend == -1:
-                    i = j + 1
-                    continue
-                const = header_is_const(code[j : hend + 1])
-                k = hend + 1
-                while k < n and code[k].isspace():
-                    k += 1
-                headers.append({"kw": kw, "const": const,
-                                "header": code[m.start() : hend + 1]})
-                if k < n and code[k] == "{":
-                    pending = {"const": const, "hstart": m.start()}
-                    i = k
-                    continue
-                if body_starts_with_loop(k):
-                    # `for (..) for (..) ...`: outer ends with the inner body
-                    chained.append({"hstart": m.start(), "const": const})
-                    i = k
-                    continue
-                semi = code.find(";", k)
-                bend = semi if semi != -1 else min(n - 1, k + 200)
-                record(m.start(), bend, const)
-                i = bend + 1
-                continue
-            i = m.end()
-            continue
-        if code[i] == "{":
-            is_loop = pending is not None
-            block_stack.append(is_loop)
-            if is_loop:
-                bend = match_brace(code, i)
-                if bend == -1:
-                    bend = n - 1
-                record(pending["hstart"], bend, pending["const"])
-                pending = None
-            i += 1
-            continue
-        if code[i] == "}":
-            if block_stack:
-                block_stack.pop()
-            pending = None
-            chained.clear()
-            i += 1
-            continue
-        i += 1
-    scaling = [(s, e) for s, e, c in spans if not c]
-    maxdepth = 0
-    for s, e in scaling:
-        depth = 1 + sum(
-            1 for os, oe in scaling
-            if (os, oe) != (s, e) and os <= s and e <= oe
-        )
-        maxdepth = max(maxdepth, depth)
-    unclear = any(h["kw"] == "while" and not h["const"] for h in headers)
-    info = {"nloops": len(scaling), "maxdepth": maxdepth,
-            "unclear": unclear, "headers": headers}
-    return spans, info
-
-
-def py_loop_info(lines: list[tuple[int, int, str]]) -> tuple[list, dict]:
-    """Indent-based loop spans. lines: (lineno, indent, text)."""
-    spans: list[tuple[int, int, bool]] = []
-    headers: list[dict] = []
-    stack: list[tuple[int, bool, bool]] = []  # (indent, is_loop, const)
-    open_loop: dict | None = None  # {'indent', 'const', 'start'}
-    for lineno, ind, text in lines:
-        while len(stack) > 1 and ind <= stack[-1][0]:
-            popped = stack.pop()
-            if popped[1] and open_loop is not None and open_loop.get("indent") == popped[0]:
-                spans.append((open_loop["start"], lineno - 1, open_loop["const"]))
-                open_loop = None
-        m = re.match(r"(for|while)\b(.*)", text)
-        if m:
-            kw, hdr = m.group(1), m.group(2)
-            const = False
-            if kw == "for":
-                if re.search(r"range\s*\(\s*\d{1,4}\s*\)", hdr) and not NLIKE_RE.search(hdr):
-                    const = True
-            else:
-                const = False
-                if NLIKE_RE.search(hdr):
-                    pass
-            headers.append({"kw": kw, "const": const, "header": hdr.strip()[:120]})
-            stack.append((ind, True, const))
-            open_loop = {"indent": ind, "const": const, "start": lineno}
-        else:
-            # plain block (if/def/with/try): track indent for dedent logic
-            if text.endswith(":"):
-                stack.append((ind, False, False))
-    #close any still-open loop at EOF
-    last = lines[-1][0] if lines else 0
-    if open_loop is not None:
-        spans.append((open_loop["start"], last, open_loop["const"]))
-    if len(stack) > 1:
-        pass
-    scaling = [(s, e) for s, e, c in spans if not c]
-    maxdepth = 0
-    for s, e in scaling:
-        depth = 1 + sum(
-            1 for os, oe in scaling
-            if (os, oe) != (s, e) and os <= s and e <= oe
-        )
-        maxdepth = max(maxdepth, depth)
-    unclear = any(h["kw"] == "while" for h in headers)
-    info = {"nloops": len(scaling), "maxdepth": maxdepth,
-            "unclear": unclear, "headers": headers}
-    return spans, info
-
-
-def depth_at(spans: list, pos: int) -> int:
-    return sum(1 for s, e, c in spans if not c and s <= pos <= e)
-
-
-def find_calls(code: str, patterns: list) -> list[int]:
-    out: list[int] = []
-    for r in patterns:
-        out.extend(m.start() for m in r.finditer(code))
-    return sorted(out)
-
-
-def detect_recursion(code: str, lang: str) -> bool:
-    """True only if a function/method calls itself inside its own body."""
-    for r in RECURSION_DEF_RES:
-        for m in r.finditer(code):
-            # skip C++ operator overloads: `operator new(...)`, `operator delete`
-            prefix = code[max(0, m.start(1) - 9) : m.start(1)]
-            if prefix.rstrip().endswith("operator"):
-                continue
-            name = m.group(1)
-            if name in {"if", "for", "while", "switch", "catch", "return",
-                        "sizeof", "elif", "with", "delete", "new", "operator"}:
-                continue
-            body: str | None = None
-            if lang == "Python":
-                lineno = code.count("\n", 0, m.start()) + 1
-                lines = code.splitlines()
-                try:
-                    base = len(lines[lineno - 1]) - len(lines[lineno - 1].lstrip(" "))
-                except IndexError:
-                    continue
-                buf: list[str] = []
-                for ln in lines[lineno:]:
-                    if ln.strip() == "":
-                        buf.append(ln)
-                        continue
-                    ind = len(ln) - len(ln.lstrip(" "))
-                    if ind <= base:
-                        break
-                    buf.append(ln)
-                body = "\n".join(buf)
-            else:
-                bopen = code.find("{", m.end())
-                if bopen == -1:
-                    continue
-                bend = match_brace(code, bopen)
-                if bend == -1:
-                    continue
-                body = code[bopen + 1 : bend]
-            if body and re.search(r"\b" + re.escape(name) + r"\s*\(", body):
-                return True
-    return False
-
-
-def file_looks_halving(code: str, info: dict) -> bool:
-    if info.get("nloops", 0) != 1:
-        return False
-    if not any(r.search(code) for r in HALVING_RES):
-        return False
-    return any(r.search(code) for r in NARROW_RES) or bool(
-        re.search(r"\bmid\b", code))
-
-
-# Assignment that shrinks a variable by division, e.g. `temp = temp / 10`,
-# `n /= 2`. Nested loops driven by such shrinking bounds are not polynomial
-# (typically logarithmic digit/halving behavior per level); label Unknown.
-SHRINK_DIV_RE = re.compile(r"(\b\w+\b)\s*=\s*[^;{]*\b\1\b\s*/|/\s*=")
-
-
-def analyze_time(code: str, lang: str) -> tuple[str, str]:
-    """Return (complexity, confidence). Low confidence callers map to Unknown."""
-    if lang == "Python":
-        raw_lines = code.splitlines()
-        lines: list[tuple[int, int, str]] = []
-        for idx, ln in enumerate(raw_lines, 1):
-            stripped = ln.strip()
-            if not stripped:
-                continue
-            indent = len(ln) - len(ln.lstrip(" "))
-            lines.append((idx, indent, stripped))
-        spans, info = py_loop_info(lines)
-        positions = []
-        for r in SORT_RES:
-            for m in r.finditer(code):
-                lineno = code.count("\n", 0, m.start()) + 1
-                positions.append(("sort", lineno))
-        for r in LOGBOUND_RES:
-            for m in r.finditer(code):
-                lineno = code.count("\n", 0, m.start()) + 1
-                positions.append(("log", lineno))
-
-        def pdepth(lineno: int) -> int:
-            return sum(1 for s, e, c in spans if not c and s <= lineno <= e)
-
-        sort_in = sum(1 for k, p in positions if k == "sort" and pdepth(p) >= 1)
-        sort_out = sum(1 for k, p in positions if k == "sort" and pdepth(p) == 0)
-        log_in = sum(1 for k, p in positions if k == "log" and pdepth(p) >= 1)
-        log_out = sum(1 for k, p in positions if k == "log" and pdepth(p) == 0)
-        rec = detect_recursion(code, lang)
-        halving = file_looks_halving(code, info)
-        depth, unclear = info["maxdepth"], info["unclear"]
-    else:
-        spans, info = brace_loop_spans(code)
-        sort_pos = find_calls(code, SORT_RES)
-        log_pos = find_calls(code, LOGBOUND_RES)
-        sort_in = sum(1 for p in sort_pos if depth_at(spans, p) >= 1)
-        sort_out = sum(1 for p in sort_pos if depth_at(spans, p) == 0)
-        log_in = sum(1 for p in log_pos if depth_at(spans, p) >= 1)
-        log_out = sum(1 for p in log_pos if depth_at(spans, p) == 0)
-        rec = detect_recursion(code, lang)
-        halving = file_looks_halving(code, info)
-        depth, unclear = info["maxdepth"], info["unclear"]
-
-    def conf(level: str) -> str:
-        if unclear and level == "High":
-            return "Medium"
-        return level
-
-    if rec:
-        return "Unknown", "Low"
-    if depth >= 2 and SHRINK_DIV_RE.search(code):
-        # e.g. digit-extraction loops (x = x / 10): not polynomial
-        return "Unknown", "Low"
-    if depth == 0 and not sort_in and not sort_out and not log_in and not log_out:
-        return "O(1)", "High"
-    if halving and not sort_in and not sort_out and depth <= 1:
-        return "O(log n)", "High" if not unclear else "Medium"
-    if (depth == 1 and info.get("nloops", 0) == 1 and not sort_in
-            and not sort_out and not log_in and SHRINK_DIV_RE.search(code)):
-        # e.g. `while (x > 0) { ... x = x / 10; }`: digit-shrinking loop
-        return "O(log n)", "Medium"
-    if depth == 0 and (sort_out or sort_in) and not log_in and not log_out:
-        return "O(n log n)", "High"
-    if depth == 0 and (log_out or log_in) and not (sort_out or sort_in):
-        return "O(log n)", "Medium"
-    if depth == 1 and not sort_in and not sort_out and not log_in:
-        return "O(n)", conf("High")
-    if depth == 1 and not sort_in and log_in and not sort_out:
-        return "O(n log n)", "Medium"
-    if depth == 1 and sort_in and not log_in:
-        # loop containing a sort over n: n * (n log n)
-        return "O(n^2 log n)", "Medium"
-    if depth == 1 and sort_out and not sort_in and not log_in:
-        return "O(n log n)", "Medium"  # sort dominates the linear pass
-    if depth == 2 and not sort_in and not log_in:
-        return "O(n^2)", conf("Medium")
-    if depth == 3 and not sort_in and not log_in:
-        return "O(n^3)", "Medium"
-    return "Unknown", "Low"
-
-
-def var_grows(code: str, var: str) -> bool:
-    """Evidence that `var` is a string/container (not a scalar counter)."""
-    v = re.escape(var)
-    if re.search(r"(?:std::string|string|StringBuilder|StringBuffer)\s+" + v + r"\b", code):
-        return True
-    if re.search(v + r"\s*=\s*(\"\"\"|\"|'|\[|list\s*\(|set\s*\(|dict\s*\(|str\s*\(|StringBuilder\s*\()", code):
-        return True
-    return False
-
-
-def analyze_space(code: str, lang: str, spans: list) -> tuple[str, str]:
-    if any(r.search(code) for r in ALLOC_2D_RES):
-        return "O(n^2)", "High"
-    if any(r.search(code) for r in ALLOC_N_RES):
-        return "O(n)", "High"
-    nloops_scaling = sum(1 for _, _, c in spans if not c)
-    if nloops_scaling >= 1:
-        if lang == "Python":
-            def pdepth(lineno: int) -> int:
-                return sum(1 for s, e, c in spans if not c and s <= lineno <= e)
-
-            def at_depth(pat: re.Pattern[str]) -> list:
-                out = []
-                for m in pat.finditer(code):
-                    out.append((m, pdepth(code.count("\n", 0, m.start()) + 1)))
-                return out
-        else:
-            def at_depth(pat: re.Pattern[str]) -> list:
-                return [(m, depth_at(spans, m.start())) for m in pat.finditer(code)]
-        # containers grown inside a scaling loop (e.g. push_back / append)
-        if any(d >= 1 for _, d in at_depth(GROW_CALL_RE)):
-            return "O(n)", "Medium"
-        # `x += ...` grows only when x is a string/container, not a scalar
-        for m, d in at_depth(re.compile(r"(\w+)\s*\+=")):
-            if d >= 1 and var_grows(code, m.group(1)):
-                return "O(n)", "Medium"
-    if detect_recursion(code, lang):
-        return "O(n)", "Medium"  # recursion stack
-    if re.search(r"\b(unordered_map|unordered_set|map\s*<|set\s*<|dict\s*\(|set\s*\(|Counter\s*\()", code):
-        return "O(n)", "Medium" if nloops_scaling >= 1 else "Low"
-    return "O(1)", "High"
-
-
-def analyze_file(path: Path, lang: str) -> tuple[str, str, str, str]:
-    """Return (time, time_conf, space, space_conf). Never raises."""
-    try:
-        text = path.read_text(encoding="utf-8", errors="ignore")
-    except OSError:
-        return "Unknown", "Low", "Unknown", "Low"
-    if not text.strip():
-        return "Unknown", "Low", "Unknown", "Low"
-    code = strip_code(text, lang)
-    try:
-        t, tc = analyze_time(code, lang)
-    except Exception:
-        t, tc = "Unknown", "Low"
-    try:
-        if lang == "Python":
-            raw = [(i + 1, len(l) - len(l.lstrip(" ")), l.strip())
-                   for i, l in enumerate(code.splitlines()) if l.strip()]
-            spans, info = py_loop_info(raw)
-        else:
-            spans, info = brace_loop_spans(code)
-        s, sc = analyze_space(code, lang, spans)
-    except Exception:
-        s, sc = "Unknown", "Low"
-    return t, tc, s, sc
 # --------------------------------------------------------------------------
 # SVG charts (standard library only; render natively on GitHub)
 # --------------------------------------------------------------------------
@@ -1355,8 +894,16 @@ def render_dashboard(records: list[dict], today: str,
     both = sum(1 for r in records
                if r["time_complexity"] != "Unknown" and r["space_complexity"] != "Unknown")
     most_lang, most_lang_n = (lang_c.most_common(1)[0] if lang_c else ("Unknown", 0))
-    top_time = next((k for k in TIME_AXES if time_c.get(k, 0)), "Unknown")
-    top_space = next((k for k in SPACE_AXES if space_c.get(k, 0)), "Unknown")
+    top_time = "Unknown"
+    top_space = "Unknown"
+    if total:
+        # most common = highest count (first axis wins ties, deterministic)
+        top_time = max(TIME_AXES, key=lambda k: time_c.get(k, 0))
+        top_space = max(SPACE_AXES, key=lambda k: space_c.get(k, 0))
+        if not time_c.get(top_time, 0):
+            top_time = "Unknown"
+        if not space_c.get(top_space, 0):
+            top_space = "Unknown"
 
     def pct(n: int) -> str:
         return f"{100.0 * n / total:.0f}%" if total else "N/A"
@@ -1405,8 +952,8 @@ def render_dashboard(records: list[dict], today: str,
     A("<tr>")
     A(f'<td align="center">💻<br/><b>{len(lang_c)}</b><br/>Languages</td>')
     A(f'<td align="center">⭐<br/><b>{esc_xml(most_lang)}</b><br/>Most used</td>')
-    A(f'<td align="center">⚡<br/><b>{pct(known_t)}</b><br/>Time analyzed</td>')
-    A(f'<td align="center">💾<br/><b>{pct(known_s)}</b><br/>Space analyzed</td>')
+    A(f'<td align="center">⚡<br/><b>{pct(known_t)}</b><br/>Time complexity analyzed</td>')
+    A(f'<td align="center">💾<br/><b>{pct(known_s)}</b><br/>Space complexity analyzed</td>')
     A("</tr>")
     A("</table>")
     A("")
@@ -1462,8 +1009,13 @@ def render_dashboard(records: list[dict], today: str,
     A("")
     A(f"Most common time: **{top_time}** · Most common space: **{top_space}**")
     A("")
-    A(f"Time analyzed: **{known_t}/{total}** · "
-      f"Space analyzed: **{known_s}/{total}**")
+    A(f"Time complexity analyzed: **{known_t}/{total}** · "
+      f"Space complexity analyzed: **{known_s}/{total}**")
+    A("")
+    A("_Complexity values are automatically inferred from the submitted "
+      "source code using static analysis. They represent estimated "
+      "worst-case complexity and may be marked `Unknown` when the analyzer "
+      "cannot determine them confidently._")
     A("")
     A("_Unknown means the analyzer was not confident enough — intentional, "
       "and preferred over a wrong guess._")
