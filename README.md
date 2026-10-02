@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**61 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**62 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -18,7 +18,7 @@ there is all leetcode DSA question in this repp
   <img src="assets/stats/leetcode-profile.png" alt="LeetCode Profile" width="960">
 </picture>
 
-_Live LeetCode data for **uzair_khan_work**, synced 2026-10-01 — independent of the repository count below._
+_Live LeetCode data for **uzair_khan_work**, synced 2026-10-02 — independent of the repository count below._
 
 ## 📊 Repository Stats
 
@@ -26,8 +26,8 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>61</b><br/>Solved</td>
-<td align="center">🟢<br/><b>53</b><br/>Easy</td>
+<td align="center">🧠<br/><b>62</b><br/>Solved</td>
+<td align="center">🟢<br/><b>54</b><br/>Easy</td>
 <td align="center">🟠<br/><b>8</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**61** solutions in this repository
+**62** solutions in this repository
 
-🟢 Easy — **53**<br>
+🟢 Easy — **54**<br>
 🟠 Medium — **8**<br>
 🔴 Hard — **0**
 
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **53**<br>
+C++ — **54**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(1)** · Most common space: **O(1)**
 
-Time analyzed: **59/61** · Space analyzed: **60/61**
+Time analyzed: **60/62** · Space analyzed: **61/62**
 
 _Unknown means the analyzer was not confident enough — intentional, and preferred over a wrong guess._
 
@@ -143,6 +143,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 2015 | [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation) | 🟢 Easy | C++ | O(n^2) | O(1) |
 | 2048 | [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation) | 🟢 Easy | C++ | O(n) | O(n) |
 | 2083 | [Three Divisors](https://leetcode.com/problems/three-divisors) | 🟢 Easy | C++ | O(n) | O(1) |
+| 2132 | [Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array) | 🟢 Easy | C++ | O(n^2) | O(n^2) |
 | 2265 | [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot) | 🟠 Medium | C++ | O(n) | O(n) |
 | 2383 | [Add Two Integers](https://leetcode.com/problems/add-two-integers) | 🟢 Easy | C++ | O(1) | O(1) |
 | 2486 | [Most Frequent Even Element](https://leetcode.com/problems/most-frequent-even-element) | 🟢 Easy | C++ | O(n log n) | O(n) |
@@ -169,7 +170,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **61** · Languages: **2** · Complexity analyzed: **95%** · Last updated: **2026-10-01**
+Problems solved: **62** · Languages: **2** · Complexity analyzed: **95%** · Last updated: **2026-10-02**
 
 ---
 

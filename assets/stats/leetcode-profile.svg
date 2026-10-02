@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="440" viewBox="0 0 960 440" role="img">
-<title>LeetCode profile for uzair_khan_work — 72 solved</title>
+<title>LeetCode profile for uzair_khan_work — 73 solved</title>
 <rect x="0.5" y="0.5" width="959" height="439" rx="16" fill="#0d1117" stroke="#30363d"/>
 <rect x="28" y="24" width="32" height="32" rx="8" fill="#ffa116" fill-opacity="0.15"/>
 <text x="44" y="46" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffa116">&lt;/&gt;</text>
 <text x="72" y="49" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#f0f6fc">uzair_khan_work</text>
 <text x="932" y="49" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#8b949e">#2223460</text>
 <circle cx="130" cy="158" r="58" fill="none" stroke="#21262d" stroke-width="12"/>
-<circle cx="130" cy="158" r="58" fill="none" stroke="#ffa116" stroke-width="12" stroke-linecap="round" stroke-dasharray="6.4 364.4" transform="rotate(-90 130 158)"/>
-<text x="130" y="162" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#f0f6fc">72</text>
+<circle cx="130" cy="158" r="58" fill="none" stroke="#ffa116" stroke-width="12" stroke-linecap="round" stroke-dasharray="6.5 364.4" transform="rotate(-90 130 158)"/>
+<text x="130" y="162" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#f0f6fc">73</text>
 <text x="130" y="182" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Solved</text>
 <text x="130" y="198" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#8b949e">of 4069</text>
 <text x="272" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#3fb950">Easy</text>
-<text x="932" y="102" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#8b949e"><tspan font-weight="700" fill="#f0f6fc">62</tspan> / 968</text>
+<text x="932" y="102" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#8b949e"><tspan font-weight="700" fill="#f0f6fc">63</tspan> / 968</text>
 <rect x="272" y="114" width="660" height="8" rx="4" fill="#21262d"/>
-<rect x="272" y="114" width="42.3" height="8" rx="4" fill="#3fb950"/>
+<rect x="272" y="114" width="43.0" height="8" rx="4" fill="#3fb950"/>
 <text x="272" y="162" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#d29922">Medium</text>
 <text x="932" y="162" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#8b949e"><tspan font-weight="700" fill="#f0f6fc">10</tspan> / 2122</text>
 <rect x="272" y="174" width="660" height="8" rx="4" fill="#21262d"/>
@@ -399,8 +399,8 @@
 <rect x="860" y="336" width="13" height="13" rx="3" fill="#0e4429"/>
 <rect x="860" y="352" width="13" height="13" rx="3" fill="#006d32"/>
 <rect x="860" y="368" width="13" height="13" rx="3" fill="#39d353"/>
-<rect x="860" y="384" width="13" height="13" rx="3" fill="#21262d" fill-opacity="0.35"/>
+<rect x="860" y="384" width="13" height="13" rx="3" fill="#0e4429"/>
 <rect x="860" y="400" width="13" height="13" rx="3" fill="#21262d" fill-opacity="0.35"/>
-<text x="28" y="432" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">2025.10.2</text>
-<text x="932" y="432" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">2026.10.1</text>
+<text x="28" y="432" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">2025.10.3</text>
+<text x="932" y="432" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">2026.10.2</text>
 </svg>
