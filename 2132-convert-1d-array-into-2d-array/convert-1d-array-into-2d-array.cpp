@@ -6,12 +6,8 @@ public:
         if (m * n != original.size()) {
             return {};
         }
-        int k = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                v[i][j] = original[k];
-                k++;
-            }
+        for (int i = 0; i < m * n; i++) {
+            v[i / m][i % m] = original[i];
         }
         return v;
     }
