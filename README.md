@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**64 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**65 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,8 +26,8 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>64</b><br/>Solved</td>
-<td align="center">🟢<br/><b>56</b><br/>Easy</td>
+<td align="center">🧠<br/><b>65</b><br/>Solved</td>
+<td align="center">🟢<br/><b>57</b><br/>Easy</td>
 <td align="center">🟠<br/><b>8</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**64** solutions in this repository
+**65** solutions in this repository
 
-🟢 Easy — **56**<br>
+🟢 Easy — **57**<br>
 🟠 Medium — **8**<br>
 🔴 Hard — **0**
 
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **56**<br>
+C++ — **57**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **62/64** · Space complexity analyzed: **64/64**
+Time complexity analyzed: **63/65** · Space complexity analyzed: **65/65**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -169,12 +169,13 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 4058 | [Compute Alternating Sum](https://leetcode.com/problems/compute-alternating-sum) | 🟢 Easy | C++ | O(n) | O(1) |
 | 4087 | [Maximum Substrings With Distinct Start](https://leetcode.com/problems/maximum-substrings-with-distinct-start) | 🟠 Medium | C++ | O(n) | O(1) |
 | 4168 | [Mirror Distance of an Integer](https://leetcode.com/problems/mirror-distance-of-an-integer) | 🟢 Easy | C++ | O(log n) | O(1) |
+| 4256 | [Construct Uniform Parity Array I](https://leetcode.com/problems/construct-uniform-parity-array-i) | 🟢 Easy | C++ | O(1) | O(1) |
 
 ---
 
 ## 💓 Repository Pulse
 
-Problems solved: **64** · Languages: **2** · Complexity analyzed: **97%** · Last updated: **2026-10-04**
+Problems solved: **65** · Languages: **2** · Complexity analyzed: **97%** · Last updated: **2026-10-04**
 
 ---
 
