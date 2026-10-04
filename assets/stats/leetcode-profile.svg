@@ -9,17 +9,17 @@
 <circle cx="130" cy="158" r="58" fill="none" stroke="#ffa116" stroke-width="12" stroke-linecap="round" stroke-dasharray="6.7 364.4" transform="rotate(-90 130 158)"/>
 <text x="130" y="162" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#f0f6fc">75</text>
 <text x="130" y="182" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Solved</text>
-<text x="130" y="198" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#8b949e">of 4069</text>
+<text x="130" y="198" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#8b949e">of 4073</text>
 <text x="272" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#3fb950">Easy</text>
-<text x="932" y="102" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#8b949e"><tspan font-weight="700" fill="#f0f6fc">65</tspan> / 968</text>
+<text x="932" y="102" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#8b949e"><tspan font-weight="700" fill="#f0f6fc">65</tspan> / 969</text>
 <rect x="272" y="114" width="660" height="8" rx="4" fill="#21262d"/>
 <rect x="272" y="114" width="44.3" height="8" rx="4" fill="#3fb950"/>
 <text x="272" y="162" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#d29922">Medium</text>
-<text x="932" y="162" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#8b949e"><tspan font-weight="700" fill="#f0f6fc">10</tspan> / 2122</text>
+<text x="932" y="162" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#8b949e"><tspan font-weight="700" fill="#f0f6fc">10</tspan> / 2124</text>
 <rect x="272" y="174" width="660" height="8" rx="4" fill="#21262d"/>
 <rect x="272" y="174" width="3.1" height="8" rx="4" fill="#d29922"/>
 <text x="272" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#f85149">Hard</text>
-<text x="932" y="222" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#8b949e"><tspan font-weight="700" fill="#f0f6fc">0</tspan> / 979</text>
+<text x="932" y="222" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#8b949e"><tspan font-weight="700" fill="#f0f6fc">0</tspan> / 980</text>
 <rect x="272" y="234" width="660" height="8" rx="4" fill="#21262d"/>
 <line x1="28" y1="262" x2="932" y2="262" stroke="#21262d"/>
 <text x="28" y="288" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#8b949e">Heatmap (Last 52 Weeks)</text>
