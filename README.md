@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**66 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**67 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,8 +26,8 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>66</b><br/>Solved</td>
-<td align="center">🟢<br/><b>58</b><br/>Easy</td>
+<td align="center">🧠<br/><b>67</b><br/>Solved</td>
+<td align="center">🟢<br/><b>59</b><br/>Easy</td>
 <td align="center">🟠<br/><b>8</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
@@ -35,7 +35,7 @@ _GitHub repository data — independent of the live profile above. A solution mi
 <td align="center">💻<br/><b>2</b><br/>Languages</td>
 <td align="center">⭐<br/><b>C++</b><br/>Most used</td>
 <td align="center">⚡<br/><b>97%</b><br/>Time complexity analyzed</td>
-<td align="center">💾<br/><b>100%</b><br/>Space complexity analyzed</td>
+<td align="center">💾<br/><b>99%</b><br/>Space complexity analyzed</td>
 </tr>
 </table>
 
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**66** solutions in this repository
+**67** solutions in this repository
 
-🟢 Easy — **58**<br>
+🟢 Easy — **59**<br>
 🟠 Medium — **8**<br>
 🔴 Hard — **0**
 
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **58**<br>
+C++ — **59**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **64/66** · Space complexity analyzed: **66/66**
+Time complexity analyzed: **65/67** · Space complexity analyzed: **66/67**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -114,6 +114,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx) | 🟢 Easy | C++ | O(log n) | O(1) |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | 🟢 Easy | C++ | O(n) | O(n) |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | 🟠 Medium | C++ | O(mn) | O(m + n) |
+| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | 🟢 Easy | C++ | O(m + n) | Unknown |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | 🟢 Easy | Python | O(n) | O(n) |
 | 136 | [Single Number](https://leetcode.com/problems/single-number) | 🟢 Easy | C++ | O(n) | O(n) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | 🟢 Easy | C++ | O(n) | O(n) |
@@ -176,7 +177,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **66** · Languages: **2** · Complexity analyzed: **97%** · Last updated: **2026-10-05**
+Problems solved: **67** · Languages: **2** · Complexity analyzed: **96%** · Last updated: **2026-10-05**
 
 ---
 
