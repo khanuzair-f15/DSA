@@ -13,15 +13,15 @@
 <line class="g" x1="280.0" y1="223.0" x2="215.8" y2="356.3"/>
 <line class="g" x1="280.0" y1="223.0" x2="135.7" y2="255.9"/>
 <line class="g" x1="280.0" y1="223.0" x2="164.3" y2="130.7"/>
-<polygon points="280.0,75.0 280.0,223.0 354.0,239.9 289.9,243.5 278.4,226.4 280.0,223.0 277.0,220.6" fill="#cf222e" fill-opacity="0.25" stroke="#cf222e" stroke-width="2"/>
+<polygon points="280.0,75.0 280.0,223.0 352.1,239.5 289.6,243.0 278.4,226.3 280.0,223.0 277.1,220.7" fill="#cf222e" fill-opacity="0.25" stroke="#cf222e" stroke-width="2"/>
 <circle cx="280.0" cy="75.0" r="4" fill="#cf222e"/>
 <circle cx="280.0" cy="223.0" r="4" fill="#cf222e"/>
-<circle cx="354.0" cy="239.9" r="4" fill="#cf222e"/>
-<circle cx="289.9" cy="243.5" r="4" fill="#cf222e"/>
-<circle cx="278.4" cy="226.4" r="4" fill="#cf222e"/>
+<circle cx="352.1" cy="239.5" r="4" fill="#cf222e"/>
+<circle cx="289.6" cy="243.0" r="4" fill="#cf222e"/>
+<circle cx="278.4" cy="226.3" r="4" fill="#cf222e"/>
 <circle cx="280.0" cy="223.0" r="4" fill="#cf222e"/>
-<circle cx="277.0" cy="220.6" r="4" fill="#cf222e"/>
-<text class="t" x="280.0" y="45.0" text-anchor="middle" font-size="12">O(1) · 39</text>
+<circle cx="277.1" cy="220.7" r="4" fill="#cf222e"/>
+<text class="t" x="280.0" y="45.0" text-anchor="middle" font-size="12">O(1) · 40</text>
 <text class="t" x="419.2" y="112.0" text-anchor="start" font-size="12">O(log n) · 0</text>
 <text class="t" x="453.5" y="262.6" text-anchor="start" font-size="12">O(n) · 20</text>
 <text class="t" x="357.2" y="383.4" text-anchor="start" font-size="12">O(m + n) · 6</text>
