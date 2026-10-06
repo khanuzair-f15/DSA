@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**68 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**69 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,8 +26,8 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>68</b><br/>Solved</td>
-<td align="center">🟢<br/><b>60</b><br/>Easy</td>
+<td align="center">🧠<br/><b>69</b><br/>Solved</td>
+<td align="center">🟢<br/><b>61</b><br/>Easy</td>
 <td align="center">🟠<br/><b>8</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**68** solutions in this repository
+**69** solutions in this repository
 
-🟢 Easy — **60**<br>
+🟢 Easy — **61**<br>
 🟠 Medium — **8**<br>
 🔴 Hard — **0**
 
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **60**<br>
+C++ — **61**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **66/68** · Space complexity analyzed: **67/68**
+Time complexity analyzed: **67/69** · Space complexity analyzed: **68/69**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -149,6 +149,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 2015 | [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation) | 🟢 Easy | C++ | O(n^2) | O(1) |
 | 2048 | [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation) | 🟢 Easy | C++ | O(n) | O(n) |
 | 2083 | [Three Divisors](https://leetcode.com/problems/three-divisors) | 🟢 Easy | C++ | O(n) | O(1) |
+| 2128 | [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word) | 🟢 Easy | C++ | O(n) | O(1) |
 | 2132 | [Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array) | 🟢 Easy | C++ | O(mn) | O(mn) |
 | 2265 | [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot) | 🟠 Medium | C++ | O(n) | O(n) |
 | 2383 | [Add Two Integers](https://leetcode.com/problems/add-two-integers) | 🟢 Easy | C++ | O(1) | O(1) |
@@ -178,7 +179,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **68** · Languages: **2** · Complexity analyzed: **96%** · Last updated: **2026-10-06**
+Problems solved: **69** · Languages: **2** · Complexity analyzed: **96%** · Last updated: **2026-10-06**
 
 ---
 
