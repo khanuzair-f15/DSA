@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**69 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**70 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,8 +26,8 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>69</b><br/>Solved</td>
-<td align="center">🟢<br/><b>61</b><br/>Easy</td>
+<td align="center">🧠<br/><b>70</b><br/>Solved</td>
+<td align="center">🟢<br/><b>62</b><br/>Easy</td>
 <td align="center">🟠<br/><b>8</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**69** solutions in this repository
+**70** solutions in this repository
 
-🟢 Easy — **61**<br>
+🟢 Easy — **62**<br>
 🟠 Medium — **8**<br>
 🔴 Hard — **0**
 
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **61**<br>
+C++ — **62**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **67/69** · Space complexity analyzed: **68/69**
+Time complexity analyzed: **68/70** · Space complexity analyzed: **69/70**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -174,12 +174,13 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 4168 | [Mirror Distance of an Integer](https://leetcode.com/problems/mirror-distance-of-an-integer) | 🟢 Easy | C++ | O(log n) | O(1) |
 | 4177 | [Reverse String Prefix](https://leetcode.com/problems/reverse-string-prefix) | 🟢 Easy | C++ | O(n) | O(1) |
 | 4256 | [Construct Uniform Parity Array I](https://leetcode.com/problems/construct-uniform-parity-array-i) | 🟢 Easy | C++ | O(1) | O(1) |
+| 4264 | [First Matching Character From Both Ends](https://leetcode.com/problems/first-matching-character-from-both-ends) | 🟢 Easy | C++ | O(n) | O(1) |
 
 ---
 
 ## 💓 Repository Pulse
 
-Problems solved: **69** · Languages: **2** · Complexity analyzed: **96%** · Last updated: **2026-10-06**
+Problems solved: **70** · Languages: **2** · Complexity analyzed: **96%** · Last updated: **2026-10-06**
 
 ---
 
