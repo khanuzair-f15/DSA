@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**71 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**72 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,8 +26,8 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>71</b><br/>Solved</td>
-<td align="center">🟢<br/><b>63</b><br/>Easy</td>
+<td align="center">🧠<br/><b>72</b><br/>Solved</td>
+<td align="center">🟢<br/><b>64</b><br/>Easy</td>
 <td align="center">🟠<br/><b>8</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**71** solutions in this repository
+**72** solutions in this repository
 
-🟢 Easy — **63**<br>
+🟢 Easy — **64**<br>
 🟠 Medium — **8**<br>
 🔴 Hard — **0**
 
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **63**<br>
+C++ — **64**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **68/71** · Space complexity analyzed: **70/71**
+Time complexity analyzed: **69/72** · Space complexity analyzed: **71/72**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -160,6 +160,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 2608 | [Count the Digits That Divide a Number](https://leetcode.com/problems/count-the-digits-that-divide-a-number) | 🟢 Easy | C++ | O(log n) | O(1) |
 | 2614 | [Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer) | 🟢 Easy | C++ | O(log n) | O(1) |
 | 2634 | [Minimum Common Value](https://leetcode.com/problems/minimum-common-value) | 🟢 Easy | C++ | O(m + n) | O(1) |
+| 2698 | [Find the Array Concatenation Value](https://leetcode.com/problems/find-the-array-concatenation-value) | 🟢 Easy | C++ | O(n log n) | O(1) |
 | 2752 | [Sum Multiples](https://leetcode.com/problems/sum-multiples) | 🟢 Easy | C++ | O(n) | O(1) |
 | 3172 | [Divisible and Non-divisible Sums Difference](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference) | 🟢 Easy | C++ | O(1) | O(1) |
 | 3371 | [Harshad Number](https://leetcode.com/problems/harshad-number) | 🟢 Easy | C++ | O(log n) | O(1) |
@@ -181,7 +182,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **71** · Languages: **2** · Complexity analyzed: **94%** · Last updated: **2026-10-07**
+Problems solved: **72** · Languages: **2** · Complexity analyzed: **94%** · Last updated: **2026-10-07**
 
 ---
 
