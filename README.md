@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**70 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**71 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -18,7 +18,7 @@ there is all leetcode DSA question in this repp
   <img src="assets/stats/leetcode-profile.png" alt="LeetCode Profile" width="960">
 </picture>
 
-_Live LeetCode data for **uzair_khan_work**, synced 2026-10-06 — independent of the repository count below._
+_Live LeetCode data for **uzair_khan_work**, synced 2026-10-07 — independent of the repository count below._
 
 ## 📊 Repository Stats
 
@@ -26,15 +26,15 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>70</b><br/>Solved</td>
-<td align="center">🟢<br/><b>62</b><br/>Easy</td>
+<td align="center">🧠<br/><b>71</b><br/>Solved</td>
+<td align="center">🟢<br/><b>63</b><br/>Easy</td>
 <td align="center">🟠<br/><b>8</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
 <tr>
 <td align="center">💻<br/><b>2</b><br/>Languages</td>
 <td align="center">⭐<br/><b>C++</b><br/>Most used</td>
-<td align="center">⚡<br/><b>97%</b><br/>Time complexity analyzed</td>
+<td align="center">⚡<br/><b>96%</b><br/>Time complexity analyzed</td>
 <td align="center">💾<br/><b>99%</b><br/>Space complexity analyzed</td>
 </tr>
 </table>
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**70** solutions in this repository
+**71** solutions in this repository
 
-🟢 Easy — **62**<br>
+🟢 Easy — **63**<br>
 🟠 Medium — **8**<br>
 🔴 Hard — **0**
 
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **62**<br>
+C++ — **63**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **68/70** · Space complexity analyzed: **69/70**
+Time complexity analyzed: **68/71** · Space complexity analyzed: **70/71**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -137,6 +137,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 742 | [To Lower Case](https://leetcode.com/problems/to-lower-case) | 🟢 Easy | Python | O(n) | O(n) |
 | 782 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones) | 🟢 Easy | C++ | O(m + n) | O(1) |
 | 792 | [Binary Search](https://leetcode.com/problems/binary-search) | 🟢 Easy | C++ | O(log n) | O(1) |
+| 953 | [Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters) | 🟢 Easy | C++ | Unknown | O(1) |
 | 1319 | [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences) | 🟢 Easy | C++ | Unknown | O(n) |
 | 1349 | [Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line) | 🟢 Easy | C++ | O(n) | O(1) |
 | 1406 | [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer) | 🟢 Easy | C++ | O(log n) | O(1) |
@@ -180,7 +181,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **70** · Languages: **2** · Complexity analyzed: **96%** · Last updated: **2026-10-06**
+Problems solved: **71** · Languages: **2** · Complexity analyzed: **94%** · Last updated: **2026-10-07**
 
 ---
 
