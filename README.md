@@ -160,7 +160,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 2608 | [Count the Digits That Divide a Number](https://leetcode.com/problems/count-the-digits-that-divide-a-number) | 🟢 Easy | C++ | O(log n) | O(1) |
 | 2614 | [Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer) | 🟢 Easy | C++ | O(log n) | O(1) |
 | 2634 | [Minimum Common Value](https://leetcode.com/problems/minimum-common-value) | 🟢 Easy | C++ | O(m + n) | O(1) |
-| 2698 | [Find the Array Concatenation Value](https://leetcode.com/problems/find-the-array-concatenation-value) | 🟢 Easy | C++ | O(n log n) | O(1) |
+| 2698 | [Find the Array Concatenation Value](https://leetcode.com/problems/find-the-array-concatenation-value) | 🟢 Easy | C++ | O(n^2) | O(1) |
 | 2752 | [Sum Multiples](https://leetcode.com/problems/sum-multiples) | 🟢 Easy | C++ | O(n) | O(1) |
 | 3172 | [Divisible and Non-divisible Sums Difference](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference) | 🟢 Easy | C++ | O(1) | O(1) |
 | 3371 | [Harshad Number](https://leetcode.com/problems/harshad-number) | 🟢 Easy | C++ | O(log n) | O(1) |
