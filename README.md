@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**72 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**73 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,8 +26,8 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>72</b><br/>Solved</td>
-<td align="center">🟢<br/><b>64</b><br/>Easy</td>
+<td align="center">🧠<br/><b>73</b><br/>Solved</td>
+<td align="center">🟢<br/><b>65</b><br/>Easy</td>
 <td align="center">🟠<br/><b>8</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**72** solutions in this repository
+**73** solutions in this repository
 
-🟢 Easy — **64**<br>
+🟢 Easy — **65**<br>
 🟠 Medium — **8**<br>
 🔴 Hard — **0**
 
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **64**<br>
+C++ — **65**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **69/72** · Space complexity analyzed: **71/72**
+Time complexity analyzed: **70/73** · Space complexity analyzed: **72/73**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -167,6 +167,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 3379 | [Score of a String](https://leetcode.com/problems/score-of-a-string) | 🟢 Easy | C++ | O(n) | O(1) |
 | 3476 | [Find Minimum Operations to Make All Elements Divisible by Three](https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three) | 🟢 Easy | C++ | O(n) | O(1) |
 | 3581 | [The Two Sneaky Numbers of Digitville](https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville) | 🟢 Easy | C++ | O(n) | O(n) |
+| 3811 | [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string) | 🟢 Easy | C++ | O(n) | O(1) |
 | 3830 | [Find Closest Person](https://leetcode.com/problems/find-closest-person) | 🟢 Easy | C++ | O(1) | O(1) |
 | 3846 | [Minimum Operations to Make Array Sum Divisible by K](https://leetcode.com/problems/minimum-operations-to-make-array-sum-divisible-by-k) | 🟢 Easy | C++ | O(n) | O(1) |
 | 3869 | [Smallest Index With Digit Sum Equal to Index](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index) | 🟢 Easy | C++ | O(n log n) | O(1) |
@@ -182,7 +183,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **72** · Languages: **2** · Complexity analyzed: **94%** · Last updated: **2026-10-10**
+Problems solved: **73** · Languages: **2** · Complexity analyzed: **95%** · Last updated: **2026-10-10**
 
 ---
 
