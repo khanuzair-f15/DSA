@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**73 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**74 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,8 +26,8 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>73</b><br/>Solved</td>
-<td align="center">🟢<br/><b>65</b><br/>Easy</td>
+<td align="center">🧠<br/><b>74</b><br/>Solved</td>
+<td align="center">🟢<br/><b>66</b><br/>Easy</td>
 <td align="center">🟠<br/><b>8</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**73** solutions in this repository
+**74** solutions in this repository
 
-🟢 Easy — **65**<br>
+🟢 Easy — **66**<br>
 🟠 Medium — **8**<br>
 🔴 Hard — **0**
 
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **65**<br>
+C++ — **66**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **70/73** · Space complexity analyzed: **72/73**
+Time complexity analyzed: **71/74** · Space complexity analyzed: **73/74**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -134,6 +134,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 507 | [Perfect Number](https://leetcode.com/problems/perfect-number) | 🟢 Easy | C++ | O(n) | O(1) |
 | 520 | [Detect Capital](https://leetcode.com/problems/detect-capital) | 🟢 Easy | Python | O(n) | O(n) |
 | 557 | [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii) | 🟢 Easy | C++ | O(n^2) | O(n) |
+| 724 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index) | 🟢 Easy | C++ | O(n) | O(n) |
 | 742 | [To Lower Case](https://leetcode.com/problems/to-lower-case) | 🟢 Easy | Python | O(n) | O(n) |
 | 782 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones) | 🟢 Easy | C++ | O(m + n) | O(1) |
 | 792 | [Binary Search](https://leetcode.com/problems/binary-search) | 🟢 Easy | C++ | O(log n) | O(1) |
@@ -183,7 +184,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **73** · Languages: **2** · Complexity analyzed: **95%** · Last updated: **2026-10-11**
+Problems solved: **74** · Languages: **2** · Complexity analyzed: **95%** · Last updated: **2026-10-11**
 
 ---
 
