@@ -10,22 +10,16 @@ public:
         return sum;
     }
     bool isHappy(int n) {
-        unordered_set<int> s;
-        s.insert(n);
         while (true) {
             int y = sqsumdig(n);
-            if (y == 1) {
+            if (y == 1 || y == 7) {
                 return true;
-            } else if (s.find(y) != s.end()) {
+            } else if (y < 10) {
                 return false;
             } else {
                 n = y;
-                s.insert(n);
             }
         }
-
-        // 19
-        //
         return false;
     }
 };
