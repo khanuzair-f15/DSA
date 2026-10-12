@@ -35,7 +35,7 @@ _GitHub repository data — independent of the live profile above. A solution mi
 <td align="center">💻<br/><b>2</b><br/>Languages</td>
 <td align="center">⭐<br/><b>C++</b><br/>Most used</td>
 <td align="center">⚡<br/><b>95%</b><br/>Time complexity analyzed</td>
-<td align="center">💾<br/><b>97%</b><br/>Space complexity analyzed</td>
+<td align="center">💾<br/><b>99%</b><br/>Space complexity analyzed</td>
 </tr>
 </table>
 
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **71/75** · Space complexity analyzed: **73/75**
+Time complexity analyzed: **71/75** · Space complexity analyzed: **74/75**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -117,7 +117,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | 🟢 Easy | C++ | O(m + n) | Unknown |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | 🟢 Easy | Python | O(n) | O(n) |
 | 136 | [Single Number](https://leetcode.com/problems/single-number) | 🟢 Easy | C++ | O(n) | O(n) |
-| 202 | [Happy Number](https://leetcode.com/problems/happy-number) | 🟢 Easy | C++ | Unknown | Unknown |
+| 202 | [Happy Number](https://leetcode.com/problems/happy-number) | 🟢 Easy | C++ | Unknown | O(1) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | 🟢 Easy | C++ | O(n) | O(n) |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | 🟢 Easy | Python | O(n log n) | O(m + n) |
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits) | 🟢 Easy | C++ | Unknown | O(1) |
