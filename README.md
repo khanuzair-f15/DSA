@@ -34,7 +34,7 @@ _GitHub repository data — independent of the live profile above. A solution mi
 <tr>
 <td align="center">💻<br/><b>2</b><br/>Languages</td>
 <td align="center">⭐<br/><b>C++</b><br/>Most used</td>
-<td align="center">⚡<br/><b>93%</b><br/>Time complexity analyzed</td>
+<td align="center">⚡<br/><b>95%</b><br/>Time complexity analyzed</td>
 <td align="center">💾<br/><b>99%</b><br/>Space complexity analyzed</td>
 </tr>
 </table>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **71/76** · Space complexity analyzed: **75/76**
+Time complexity analyzed: **72/76** · Space complexity analyzed: **75/76**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -123,7 +123,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits) | 🟢 Easy | C++ | Unknown | O(1) |
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number) | 🟢 Easy | C++ | O(n) | O(1) |
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | 🟢 Easy | C++ | O(log n) | O(1) |
-| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | 🟢 Easy | C++ | Unknown | O(1) |
+| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | 🟢 Easy | C++ | O(n) | O(1) |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | 🟠 Medium | C++ | O(n) | O(1) |
 | 326 | [Power of Three](https://leetcode.com/problems/power-of-three) | 🟢 Easy | C++ | O(1) | O(1) |
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays) | 🟢 Easy | C++ | O(m + n) | O(m + n) |
@@ -186,7 +186,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **76** · Languages: **2** · Complexity analyzed: **92%** · Last updated: **2026-10-13**
+Problems solved: **76** · Languages: **2** · Complexity analyzed: **93%** · Last updated: **2026-10-13**
 
 ---
 
