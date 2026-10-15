@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**81 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**82 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,8 +26,8 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>81</b><br/>Solved</td>
-<td align="center">🟢<br/><b>71</b><br/>Easy</td>
+<td align="center">🧠<br/><b>82</b><br/>Solved</td>
+<td align="center">🟢<br/><b>72</b><br/>Easy</td>
 <td align="center">🟠<br/><b>10</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**81** solutions in this repository
+**82** solutions in this repository
 
-🟢 Easy — **71**<br>
+🟢 Easy — **72**<br>
 🟠 Medium — **10**<br>
 🔴 Hard — **0**
 
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **73**<br>
+C++ — **74**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **74/81** · Space complexity analyzed: **80/81**
+Time complexity analyzed: **75/82** · Space complexity analyzed: **81/82**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -123,6 +123,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | 🟢 Easy | C++ | O(n) | O(n) |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | 🟢 Easy | Python | O(n log n) | O(m + n) |
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits) | 🟢 Easy | C++ | Unknown | O(1) |
+| 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | 🟢 Easy | C++ | O(log n) | O(1) |
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number) | 🟢 Easy | C++ | O(n) | O(1) |
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | 🟢 Easy | C++ | O(log n) | O(1) |
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | 🟢 Easy | C++ | O(n) | O(1) |
@@ -191,7 +192,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **81** · Languages: **2** · Complexity analyzed: **90%** · Last updated: **2026-10-15**
+Problems solved: **82** · Languages: **2** · Complexity analyzed: **90%** · Last updated: **2026-10-15**
 
 ---
 
