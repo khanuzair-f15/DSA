@@ -7,11 +7,12 @@ public:
         // 2 7 11 15
         //
         while (i < j) {
-            if (nums[i] + nums[j] == target) {
+            int sum = nums[i] + nums[j];
+            if (sum == target) {
                 return {i + 1, j + 1};
-            } else if (nums[i] + nums[j] > target) {
+            } else if (sum > target) {
                 j--;
-            } else if (nums[i] + nums[j] < target) {
+            } else {
                 i++;
             }
         }
