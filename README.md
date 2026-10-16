@@ -18,7 +18,7 @@ there is all leetcode DSA question in this repp
   <img src="assets/stats/leetcode-profile.png" alt="LeetCode Profile" width="960">
 </picture>
 
-_Live LeetCode data for **uzair_khan_work**, synced 2026-10-15 — independent of the repository count below._
+_Live LeetCode data for **uzair_khan_work**, synced 2026-10-16 — independent of the repository count below._
 
 ## 📊 Repository Stats
 
@@ -192,7 +192,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **82** · Languages: **2** · Complexity analyzed: **90%** · Last updated: **2026-10-15**
+Problems solved: **82** · Languages: **2** · Complexity analyzed: **90%** · Last updated: **2026-10-16**
 
 ---
 
