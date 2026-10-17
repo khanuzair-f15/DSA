@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**86 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**87 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,8 +26,8 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>86</b><br/>Solved</td>
-<td align="center">🟢<br/><b>76</b><br/>Easy</td>
+<td align="center">🧠<br/><b>87</b><br/>Solved</td>
+<td align="center">🟢<br/><b>77</b><br/>Easy</td>
 <td align="center">🟠<br/><b>10</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**86** solutions in this repository
+**87** solutions in this repository
 
-🟢 Easy — **76**<br>
+🟢 Easy — **77**<br>
 🟠 Medium — **10**<br>
 🔴 Hard — **0**
 
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **78**<br>
+C++ — **79**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **79/86** · Space complexity analyzed: **85/86**
+Time complexity analyzed: **80/87** · Space complexity analyzed: **86/87**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -148,6 +148,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 1319 | [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences) | 🟢 Easy | C++ | Unknown | O(n) |
 | 1349 | [Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line) | 🟢 Easy | C++ | O(n) | O(1) |
 | 1406 | [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer) | 🟢 Easy | C++ | O(log n) | O(1) |
+| 1505 | [Create Target Array in the Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order) | 🟢 Easy | C++ | O(n) | O(n) |
 | 1510 | [Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array) | 🟢 Easy | C++ | O(n) | O(n) |
 | 1585 | [The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n) | 🟠 Medium | C++ | O(n) | O(n) |
 | 1603 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array) | 🟢 Easy | C++ | O(n^2) | O(1) |
@@ -196,7 +197,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **86** · Languages: **2** · Complexity analyzed: **91%** · Last updated: **2026-10-17**
+Problems solved: **87** · Languages: **2** · Complexity analyzed: **91%** · Last updated: **2026-10-17**
 
 ---
 
