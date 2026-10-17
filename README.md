@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**87 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**88 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,8 +26,8 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>87</b><br/>Solved</td>
-<td align="center">🟢<br/><b>77</b><br/>Easy</td>
+<td align="center">🧠<br/><b>88</b><br/>Solved</td>
+<td align="center">🟢<br/><b>78</b><br/>Easy</td>
 <td align="center">🟠<br/><b>10</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**87** solutions in this repository
+**88** solutions in this repository
 
-🟢 Easy — **77**<br>
+🟢 Easy — **78**<br>
 🟠 Medium — **10**<br>
 🔴 Hard — **0**
 
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **79**<br>
+C++ — **80**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **80/87** · Space complexity analyzed: **86/87**
+Time complexity analyzed: **81/88** · Space complexity analyzed: **87/88**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -176,6 +176,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 2917 | [Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target) | 🟢 Easy | C++ | O(n^2) | O(1) |
 | 3172 | [Divisible and Non-divisible Sums Difference](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference) | 🟢 Easy | C++ | O(1) | O(1) |
 | 3194 | [Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character) | 🟢 Easy | C++ | O(mn) | O(n) |
+| 3331 | [Minimum Operations to Exceed Threshold Value I](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i) | 🟢 Easy | C++ | O(n) | O(1) |
 | 3371 | [Harshad Number](https://leetcode.com/problems/harshad-number) | 🟢 Easy | C++ | O(log n) | O(1) |
 | 3379 | [Score of a String](https://leetcode.com/problems/score-of-a-string) | 🟢 Easy | C++ | O(n) | O(1) |
 | 3476 | [Find Minimum Operations to Make All Elements Divisible by Three](https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three) | 🟢 Easy | C++ | O(n) | O(1) |
@@ -197,7 +198,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **87** · Languages: **2** · Complexity analyzed: **91%** · Last updated: **2026-10-17**
+Problems solved: **88** · Languages: **2** · Complexity analyzed: **91%** · Last updated: **2026-10-17**
 
 ---
 
