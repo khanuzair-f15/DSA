@@ -5,7 +5,7 @@ public:
         int count = 0;
         for (int i = 0; i < n; i++) {
             if (n % (i + 1) == 0) {
-                count = count + nums[i] * nums[i];
+                count += pow(nums[i], 2);
             }
         }
         return count;
