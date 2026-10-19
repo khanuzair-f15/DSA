@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**89 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**90 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,8 +26,8 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>89</b><br/>Solved</td>
-<td align="center">🟢<br/><b>79</b><br/>Easy</td>
+<td align="center">🧠<br/><b>90</b><br/>Solved</td>
+<td align="center">🟢<br/><b>80</b><br/>Easy</td>
 <td align="center">🟠<br/><b>10</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**89** solutions in this repository
+**90** solutions in this repository
 
-🟢 Easy — **79**<br>
+🟢 Easy — **80**<br>
 🟠 Medium — **10**<br>
 🔴 Hard — **0**
 
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **81**<br>
+C++ — **82**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **82/89** · Space complexity analyzed: **88/89**
+Time complexity analyzed: **83/90** · Space complexity analyzed: **89/90**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -168,6 +168,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 2486 | [Most Frequent Even Element](https://leetcode.com/problems/most-frequent-even-element) | 🟢 Easy | C++ | O(n log n) | O(n) |
 | 2491 | [Smallest Even Multiple](https://leetcode.com/problems/smallest-even-multiple) | 🟢 Easy | C++ | O(1) | O(1) |
 | 2502 | [Sort the People](https://leetcode.com/problems/sort-the-people) | 🟢 Easy | C++ | O(n log n) | O(n) |
+| 2556 | [Convert the Temperature](https://leetcode.com/problems/convert-the-temperature) | 🟢 Easy | C++ | O(1) | O(1) |
 | 2608 | [Count the Digits That Divide a Number](https://leetcode.com/problems/count-the-digits-that-divide-a-number) | 🟢 Easy | C++ | O(log n) | O(1) |
 | 2614 | [Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer) | 🟢 Easy | C++ | O(log n) | O(1) |
 | 2634 | [Minimum Common Value](https://leetcode.com/problems/minimum-common-value) | 🟢 Easy | C++ | O(m + n) | O(1) |
@@ -199,7 +200,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **89** · Languages: **2** · Complexity analyzed: **91%** · Last updated: **2026-10-19**
+Problems solved: **90** · Languages: **2** · Complexity analyzed: **91%** · Last updated: **2026-10-19**
 
 ---
 
