@@ -17,21 +17,21 @@
 <line class="g" x1="280.0" y1="223.0" x2="133.5" y2="244.1"/>
 <line class="g" x1="280.0" y1="223.0" x2="145.4" y2="161.5"/>
 <line class="g" x1="280.0" y1="223.0" x2="200.0" y2="98.5"/>
-<polygon points="280.0,193.4 306.0,182.5 414.6,161.5 305.6,226.7 296.8,237.5 285.2,240.8 273.7,244.3 280.0,223.0 280.0,223.0 280.0,223.0 260.0,191.9" fill="#8250df" fill-opacity="0.25" stroke="#8250df" stroke-width="2"/>
-<circle cx="280.0" cy="193.4" r="4" fill="#8250df"/>
-<circle cx="306.0" cy="182.5" r="4" fill="#8250df"/>
+<polygon points="280.0,194.1 305.4,183.5 414.6,161.5 305.0,226.6 296.4,237.2 285.1,240.3 273.9,243.8 280.0,223.0 280.0,223.0 280.0,223.0 260.5,192.6" fill="#8250df" fill-opacity="0.25" stroke="#8250df" stroke-width="2"/>
+<circle cx="280.0" cy="194.1" r="4" fill="#8250df"/>
+<circle cx="305.4" cy="183.5" r="4" fill="#8250df"/>
 <circle cx="414.6" cy="161.5" r="4" fill="#8250df"/>
-<circle cx="305.6" cy="226.7" r="4" fill="#8250df"/>
-<circle cx="296.8" cy="237.5" r="4" fill="#8250df"/>
-<circle cx="285.2" cy="240.8" r="4" fill="#8250df"/>
-<circle cx="273.7" cy="244.3" r="4" fill="#8250df"/>
+<circle cx="305.0" cy="226.6" r="4" fill="#8250df"/>
+<circle cx="296.4" cy="237.2" r="4" fill="#8250df"/>
+<circle cx="285.1" cy="240.3" r="4" fill="#8250df"/>
+<circle cx="273.9" cy="243.8" r="4" fill="#8250df"/>
 <circle cx="280.0" cy="223.0" r="4" fill="#8250df"/>
 <circle cx="280.0" cy="223.0" r="4" fill="#8250df"/>
 <circle cx="280.0" cy="223.0" r="4" fill="#8250df"/>
-<circle cx="260.0" cy="191.9" r="4" fill="#8250df"/>
+<circle cx="260.5" cy="192.6" r="4" fill="#8250df"/>
 <text class="t" x="280.0" y="45.0" text-anchor="middle" font-size="12">O(1) · 8</text>
 <text class="t" x="376.2" y="73.3" text-anchor="start" font-size="12">O(log n) · 13</text>
-<text class="t" x="441.9" y="149.1" text-anchor="start" font-size="12">O(n) · 40</text>
+<text class="t" x="441.9" y="149.1" text-anchor="start" font-size="12">O(n) · 41</text>
 <text class="t" x="456.2" y="248.3" text-anchor="start" font-size="12">O(n log n) · 7</text>
 <text class="t" x="414.5" y="339.6" text-anchor="start" font-size="12">O(m + n) · 6</text>
 <text class="t" x="330.1" y="393.8" text-anchor="middle" font-size="12">O(mn) · 5</text>
