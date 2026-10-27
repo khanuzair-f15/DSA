@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**96 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**97 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,8 +26,8 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>96</b><br/>Solved</td>
-<td align="center">🟢<br/><b>86</b><br/>Easy</td>
+<td align="center">🧠<br/><b>97</b><br/>Solved</td>
+<td align="center">🟢<br/><b>87</b><br/>Easy</td>
 <td align="center">🟠<br/><b>10</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**96** solutions in this repository
+**97** solutions in this repository
 
-🟢 Easy — **86**<br>
+🟢 Easy — **87**<br>
 🟠 Medium — **10**<br>
 🔴 Hard — **0**
 
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **88**<br>
+C++ — **89**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **86/96** · Space complexity analyzed: **93/96**
+Time complexity analyzed: **87/97** · Space complexity analyzed: **94/97**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -148,6 +148,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 782 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones) | 🟢 Easy | C++ | O(m + n) | O(1) |
 | 792 | [Binary Search](https://leetcode.com/problems/binary-search) | 🟢 Easy | C++ | O(log n) | O(1) |
 | 953 | [Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters) | 🟢 Easy | C++ | Unknown | O(1) |
+| 958 | [Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii) | 🟢 Easy | C++ | O(n) | O(1) |
 | 1019 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array) | 🟢 Easy | C++ | Unknown | Unknown |
 | 1115 | [Valid Boomerang](https://leetcode.com/problems/valid-boomerang) | 🟢 Easy | C++ | O(1) | O(1) |
 | 1293 | [Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds) | 🟢 Easy | C++ | Unknown | O(1) |
@@ -206,7 +207,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **96** · Languages: **2** · Complexity analyzed: **89%** · Last updated: **2026-10-27**
+Problems solved: **97** · Languages: **2** · Complexity analyzed: **89%** · Last updated: **2026-10-27**
 
 ---
 
