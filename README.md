@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**99 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**100 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,15 +26,15 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>99</b><br/>Solved</td>
+<td align="center">🧠<br/><b>100</b><br/>Solved</td>
 <td align="center">🟢<br/><b>89</b><br/>Easy</td>
-<td align="center">🟠<br/><b>10</b><br/>Medium</td>
+<td align="center">🟠<br/><b>11</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
 <tr>
 <td align="center">💻<br/><b>2</b><br/>Languages</td>
 <td align="center">⭐<br/><b>C++</b><br/>Most used</td>
-<td align="center">⚡<br/><b>88%</b><br/>Time complexity analyzed</td>
+<td align="center">⚡<br/><b>87%</b><br/>Time complexity analyzed</td>
 <td align="center">💾<br/><b>97%</b><br/>Space complexity analyzed</td>
 </tr>
 </table>
@@ -43,10 +43,10 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**99** solutions in this repository
+**100** solutions in this repository
 
 🟢 Easy — **89**<br>
-🟠 Medium — **10**<br>
+🟠 Medium — **11**<br>
 🔴 Hard — **0**
 
 <picture>
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **91**<br>
+C++ — **92**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **87/99** · Space complexity analyzed: **96/99**
+Time complexity analyzed: **87/100** · Space complexity analyzed: **97/100**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -202,6 +202,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 4177 | [Reverse String Prefix](https://leetcode.com/problems/reverse-string-prefix) | 🟢 Easy | C++ | O(n) | O(1) |
 | 4256 | [Construct Uniform Parity Array I](https://leetcode.com/problems/construct-uniform-parity-array-i) | 🟢 Easy | C++ | O(1) | O(1) |
 | 4264 | [First Matching Character From Both Ends](https://leetcode.com/problems/first-matching-character-from-both-ends) | 🟢 Easy | C++ | O(n) | O(1) |
+| 4297 | [Sum of Primes Between Number and Its Reverse](https://leetcode.com/problems/sum-of-primes-between-number-and-its-reverse) | 🟠 Medium | C++ | Unknown | O(1) |
 | 4299 | [Concatenate Array With Reverse](https://leetcode.com/problems/concatenate-array-with-reverse) | 🟢 Easy | C++ | O(n) | O(n) |
 | 4316 | [Minimum Swaps to Move Zeros to End](https://leetcode.com/problems/minimum-swaps-to-move-zeros-to-end) | 🟢 Easy | C++ | Unknown | O(1) |
 
@@ -209,7 +210,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **99** · Languages: **2** · Complexity analyzed: **87%** · Last updated: **2026-10-30**
+Problems solved: **100** · Languages: **2** · Complexity analyzed: **86%** · Last updated: **2026-10-30**
 
 ---
 
