@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**100 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**101 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,9 +26,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>100</b><br/>Solved</td>
+<td align="center">🧠<br/><b>101</b><br/>Solved</td>
 <td align="center">🟢<br/><b>89</b><br/>Easy</td>
-<td align="center">🟠<br/><b>11</b><br/>Medium</td>
+<td align="center">🟠<br/><b>12</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
 <tr>
@@ -43,10 +43,10 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**100** solutions in this repository
+**101** solutions in this repository
 
 🟢 Easy — **89**<br>
-🟠 Medium — **11**<br>
+🟠 Medium — **12**<br>
 🔴 Hard — **0**
 
 <picture>
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **92**<br>
+C++ — **93**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **87/100** · Space complexity analyzed: **97/100**
+Time complexity analyzed: **88/101** · Space complexity analyzed: **98/101**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -109,6 +109,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | 🟢 Easy | C++ | O(n log n) | O(n) |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | 🟢 Easy | C++ | O(n) | O(n) |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | 🟢 Easy | Python | O(n log n) | O(n) |
+| 34 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | 🟠 Medium | C++ | O(log n) | O(1) |
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | 🟢 Easy | C++ | O(log n) | O(1) |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image) | 🟠 Medium | C++ | O(n^2) | O(1) |
 | 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx) | 🟢 Easy | C++ | O(log n) | O(1) |
@@ -210,7 +211,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **100** · Languages: **2** · Complexity analyzed: **86%** · Last updated: **2026-10-31**
+Problems solved: **101** · Languages: **2** · Complexity analyzed: **86%** · Last updated: **2026-10-31**
 
 ---
 
