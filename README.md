@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**105 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**106 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,8 +26,8 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>105</b><br/>Solved</td>
-<td align="center">🟢<br/><b>93</b><br/>Easy</td>
+<td align="center">🧠<br/><b>106</b><br/>Solved</td>
+<td align="center">🟢<br/><b>94</b><br/>Easy</td>
 <td align="center">🟠<br/><b>12</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**105** solutions in this repository
+**106** solutions in this repository
 
-🟢 Easy — **93**<br>
+🟢 Easy — **94**<br>
 🟠 Medium — **12**<br>
 🔴 Hard — **0**
 
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **97**<br>
+C++ — **98**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **91/105** · Space complexity analyzed: **102/105**
+Time complexity analyzed: **92/106** · Space complexity analyzed: **103/106**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -175,6 +175,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 2132 | [Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array) | 🟢 Easy | C++ | O(mn) | O(mn) |
 | 2231 | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array) | 🟢 Easy | C++ | Unknown | O(1) |
 | 2265 | [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot) | 🟠 Medium | C++ | O(n) | O(n) |
+| 2269 | [Count Elements With Strictly Smaller and Greater Elements](https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements) | 🟢 Easy | C++ | O(n) | O(1) |
 | 2383 | [Add Two Integers](https://leetcode.com/problems/add-two-integers) | 🟢 Easy | C++ | O(1) | O(1) |
 | 2486 | [Most Frequent Even Element](https://leetcode.com/problems/most-frequent-even-element) | 🟢 Easy | C++ | O(n log n) | O(n) |
 | 2491 | [Smallest Even Multiple](https://leetcode.com/problems/smallest-even-multiple) | 🟢 Easy | C++ | O(1) | O(1) |
@@ -215,7 +216,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **105** · Languages: **2** · Complexity analyzed: **86%** · Last updated: **2026-11-06**
+Problems solved: **106** · Languages: **2** · Complexity analyzed: **86%** · Last updated: **2026-11-06**
 
 ---
 
