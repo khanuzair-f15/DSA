@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**107 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**108 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -26,15 +26,15 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>107</b><br/>Solved</td>
+<td align="center">🧠<br/><b>108</b><br/>Solved</td>
 <td align="center">🟢<br/><b>95</b><br/>Easy</td>
-<td align="center">🟠<br/><b>12</b><br/>Medium</td>
+<td align="center">🟠<br/><b>13</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
 <tr>
 <td align="center">💻<br/><b>2</b><br/>Languages</td>
 <td align="center">⭐<br/><b>C++</b><br/>Most used</td>
-<td align="center">⚡<br/><b>87%</b><br/>Time complexity analyzed</td>
+<td align="center">⚡<br/><b>86%</b><br/>Time complexity analyzed</td>
 <td align="center">💾<br/><b>97%</b><br/>Space complexity analyzed</td>
 </tr>
 </table>
@@ -43,10 +43,10 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**107** solutions in this repository
+**108** solutions in this repository
 
 🟢 Easy — **95**<br>
-🟠 Medium — **12**<br>
+🟠 Medium — **13**<br>
 🔴 Hard — **0**
 
 <picture>
@@ -64,7 +64,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 ## 💻 Language Profile
 
-C++ — **99**<br>
+C++ — **100**<br>
 Python — **8**<br>
 
 <picture>
@@ -93,7 +93,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **93/107** · Space complexity analyzed: **104/107**
+Time complexity analyzed: **93/108** · Space complexity analyzed: **105/108**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -176,6 +176,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 2231 | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array) | 🟢 Easy | C++ | Unknown | O(1) |
 | 2265 | [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot) | 🟠 Medium | C++ | O(n) | O(n) |
 | 2269 | [Count Elements With Strictly Smaller and Greater Elements](https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements) | 🟢 Easy | C++ | O(n) | O(1) |
+| 2324 | [Find Triangular Sum of an Array](https://leetcode.com/problems/find-triangular-sum-of-an-array) | 🟠 Medium | C++ | Unknown | O(n) |
 | 2383 | [Add Two Integers](https://leetcode.com/problems/add-two-integers) | 🟢 Easy | C++ | O(1) | O(1) |
 | 2486 | [Most Frequent Even Element](https://leetcode.com/problems/most-frequent-even-element) | 🟢 Easy | C++ | O(n log n) | O(n) |
 | 2491 | [Smallest Even Multiple](https://leetcode.com/problems/smallest-even-multiple) | 🟢 Easy | C++ | O(1) | O(1) |
@@ -217,7 +218,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **107** · Languages: **2** · Complexity analyzed: **86%** · Last updated: **2026-11-08**
+Problems solved: **108** · Languages: **2** · Complexity analyzed: **85%** · Last updated: **2026-11-08**
 
 ---
 
