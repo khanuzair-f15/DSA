@@ -1,11 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="560" height="130" viewBox="0 0 560 130" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="430" viewBox="0 0 560 430" role="img">
 <title>Languages distribution</title>
 <defs><style>.t{fill:#57606a;font-family:sans-serif}.g{stroke:#8b949e;stroke-opacity:.35;fill:none}@media (prefers-color-scheme: dark){.t{fill:#c9d1d9}.g{stroke:#8b949e}</style></defs>
-<text class="t" x="16" y="28" font-size="16" font-weight="bold">Languages distribution</text>
-<text class="t" x="16" y="68" font-size="13">C++</text>
-<rect x="170" y="48" width="300" height="20" rx="5" fill="#1a7f37" fill-opacity="0.75"/>
-<text class="t" x="478" y="64" font-size="12">103 (93%)</text>
-<text class="t" x="16" y="102" font-size="13">Python</text>
-<rect x="170" y="82" width="23" height="20" rx="5" fill="#1a7f37" fill-opacity="0.75"/>
-<text class="t" x="201" y="98" font-size="12">8 (7%)</text>
+<text class="t" x="280.0" y="28" text-anchor="middle" font-size="16" font-weight="bold">Languages distribution</text>
+<polygon class="g" stroke-width="1" points="280.0,186.0 312.0,241.5 248.0,241.5"/>
+<polygon class="g" stroke-width="1" points="280.0,149.0 344.1,260.0 215.9,260.0"/>
+<polygon class="g" stroke-width="1" points="280.0,112.0 376.1,278.5 183.9,278.5"/>
+<polygon class="g" stroke-width="1" points="280.0,75.0 408.2,297.0 151.8,297.0"/>
+<line class="g" x1="280.0" y1="223.0" x2="280.0" y2="75.0"/>
+<line class="g" x1="280.0" y1="223.0" x2="408.2" y2="297.0"/>
+<line class="g" x1="280.0" y1="223.0" x2="151.8" y2="297.0"/>
+<polygon points="280.0,75.0 290.0,228.7 278.8,223.7" fill="#1a7f37" fill-opacity="0.25" stroke="#1a7f37" stroke-width="2"/>
+<circle cx="280.0" cy="75.0" r="4" fill="#1a7f37"/>
+<circle cx="290.0" cy="228.7" r="4" fill="#1a7f37"/>
+<circle cx="278.8" cy="223.7" r="4" fill="#1a7f37"/>
+<text class="t" x="280.0" y="45.0" text-anchor="middle" font-size="12">C++ · 103</text>
+<text class="t" x="434.2" y="312.0" text-anchor="start" font-size="12">Python · 8</text>
+<text class="t" x="125.8" y="312.0" text-anchor="end" font-size="12">Unknown · 1</text>
 </svg>
