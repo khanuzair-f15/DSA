@@ -7,7 +7,7 @@ there is all leetcode DSA question in this repp
 
 ## LeetCode Journey
 
-**113 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
+**114 solutions tracked in this repository** — difficulty, languages and complexity, tracked automatically.
 
 </div>
 
@@ -18,7 +18,7 @@ there is all leetcode DSA question in this repp
   <img src="assets/stats/leetcode-profile.png" alt="LeetCode Profile" width="960">
 </picture>
 
-_Live LeetCode data for **uzair_khan_work**, synced 2026-11-14 — independent of the repository count below._
+_Live LeetCode data for **uzair_khan_work**, synced 2026-11-15 — independent of the repository count below._
 
 ## 📊 Repository Stats
 
@@ -26,8 +26,8 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 <table>
 <tr>
-<td align="center">🧠<br/><b>113</b><br/>Solved</td>
-<td align="center">🟢<br/><b>98</b><br/>Easy</td>
+<td align="center">🧠<br/><b>114</b><br/>Solved</td>
+<td align="center">🟢<br/><b>99</b><br/>Easy</td>
 <td align="center">🟠<br/><b>15</b><br/>Medium</td>
 <td align="center">🔴<br/><b>0</b><br/>Hard</td>
 </tr>
@@ -43,9 +43,9 @@ _GitHub repository data — independent of the live profile above. A solution mi
 
 ## 🎯 Progress
 
-**113** solutions in this repository
+**114** solutions in this repository
 
-🟢 Easy — **98**<br>
+🟢 Easy — **99**<br>
 🟠 Medium — **15**<br>
 🔴 Hard — **0**
 
@@ -66,7 +66,7 @@ Difficulty mix at a glance — the radar scales with the numbers above, so it st
 
 C++ — **104**<br>
 Python — **8**<br>
-Unknown — **1**<br>
+Unknown — **2**<br>
 
 <picture>
   <source srcset="assets/stats/language-radar.svg" type="image/svg+xml">
@@ -94,7 +94,7 @@ _Fewer than three languages today renders as compact bars; the radar takes over 
 
 Most common time: **O(n)** · Most common space: **O(1)**
 
-Time complexity analyzed: **93/113** · Space complexity analyzed: **109/113**
+Time complexity analyzed: **93/114** · Space complexity analyzed: **109/114**
 
 _Complexity values are automatically inferred from the submitted source code using static analysis. They represent estimated worst-case complexity and may be marked `Unknown` when the analyzer cannot determine them confidently._
 
@@ -125,6 +125,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 | 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal) | 🟢 Easy | C++ | O(2^n) | O(2^n) |
 | 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) | 🟠 Medium | C++ | Unknown | O(1) |
 | 175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables) | 🟢 Easy | Unknown | Unknown | Unknown |
+| 182 | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails) | 🟢 Easy | Unknown | Unknown | Unknown |
 | 202 | [Happy Number](https://leetcode.com/problems/happy-number) | 🟢 Easy | C++ | Unknown | O(1) |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes) | 🟠 Medium | C++ | Unknown | O(n) |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | 🟢 Easy | C++ | Unknown | O(1) |
@@ -224,7 +225,7 @@ _Unknown means the analyzer was not confident enough — intentional, and prefer
 
 ## 💓 Repository Pulse
 
-Problems solved: **113** · Languages: **3** · Complexity analyzed: **81%** · Last updated: **2026-11-14**
+Problems solved: **114** · Languages: **3** · Complexity analyzed: **81%** · Last updated: **2026-11-15**
 
 ---
 
