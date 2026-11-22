@@ -1,6 +1,6 @@
 {
   "username": "uzair_khan_work",
-  "ranking": 1384488,
+  "ranking": 1384958,
   "solved": {
     "Easy": 111,
     "Medium": 18,
@@ -8,12 +8,12 @@
     "All": 129
   },
   "totals": {
-    "Easy": 976,
-    "Medium": 2148,
-    "Hard": 991,
-    "All": 4115
+    "Easy": 978,
+    "Medium": 2152,
+    "Hard": 993,
+    "All": 4123
   },
-  "total_questions": 4115,
+  "total_questions": 4123,
   "by_date": {
     "2026-06-17": 6,
     "2026-06-18": 5,
@@ -97,5 +97,5 @@
     "2026-11-15": 1
   },
   "latest": "2026-11-15",
-  "fetched_at": "2026-11-21T10:27:37+00:00"
+  "fetched_at": "2026-11-22T10:31:08+00:00"
 }
